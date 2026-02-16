@@ -1,0 +1,32 @@
+sources:
+  - code: demo_platform
+    name: Demo Recruiting Platform
+    source_type: platform
+    enabled: true
+    schedule_cron: "*/30 * * * *"
+    throttle:
+      qps: 1.0
+      concurrency: 2
+      jitter_ms: 200
+    retry:
+      max_attempts: 3
+      backoff_seconds: 1.0
+    headers:
+      User-Agent: "JobAggregatorBot/0.1"
+    cookies: {}
+    proxy: null
+    allow_paths: ["/jobs"]
+    deny_paths: ["/captcha", "/login"]
+
+  - code: demo_university
+    name: Demo University Career Site
+    source_type: university
+    enabled: true
+    schedule_cron: "15 */1 * * *"
+    throttle:
+      qps: 0.5
+      concurrency: 1
+      jitter_ms: 500
+    retry:
+      max_attempts: 2
+      backoff_seconds: 2.0

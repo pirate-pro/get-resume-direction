@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-start: #fefbf4;
+  --bg-end: #e7f1ff;
+  --surface: #ffffff;
+  --ink: #122026;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  color: var(--ink);
+  background: linear-gradient(155deg, var(--bg-start), var(--bg-end));
+  min-height: 100%;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-heading), sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.container-page {
+  @apply mx-auto w-full max-w-6xl px-4 md:px-8;
+}
+
+.card {
+  @apply rounded-xl border border-brand-100 bg-white p-4 shadow-soft;
+}
+
+.input {
+  @apply h-10 w-full rounded-lg border border-brand-200 bg-white px-3 text-sm outline-none transition focus:border-brand-500;
+}
+
+.select {
+  @apply h-10 w-full rounded-lg border border-brand-200 bg-white px-3 text-sm outline-none transition focus:border-brand-500;
+}
+
+.btn {
+  @apply inline-flex h-10 items-center justify-center rounded-lg px-4 text-sm font-semibold transition;
+}
+
+.btn-primary {
+  @apply btn bg-brand-500 text-white hover:bg-brand-700;
+}
+
+.btn-secondary {
+  @apply btn border border-brand-200 bg-white text-ink hover:bg-brand-50;
+}
