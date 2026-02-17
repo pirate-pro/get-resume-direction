@@ -25,8 +25,8 @@ export class ErrorBoundary extends Component<{ children: ReactNode }, ErrorBound
     if (this.state.hasError) {
       return (
         <div className="card border-red-200">
-          <h2 className="text-lg font-semibold text-red-700">Something went wrong</h2>
-          <p className="mt-2 text-sm text-red-600">{this.state.message || "Unexpected rendering error"}</p>
+          <h2 className="text-lg font-semibold text-red-700">页面发生错误</h2>
+          <p className="mt-2 text-sm text-red-600">{this.state.message || "渲染异常，请稍后重试"}</p>
         </div>
       );
     }

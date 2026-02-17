@@ -18,7 +18,7 @@ export function getQueryClient(): QueryClient {
       },
       queryCache: new QueryCache({
         onError: (error) => {
-          const message = error instanceof Error ? error.message : "Unknown request error";
+          const message = error instanceof Error ? error.message : "请求异常";
           toast.error(message);
         }
       })

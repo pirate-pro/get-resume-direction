@@ -7,7 +7,7 @@ from app.dao.crawl_run_dao import CrawlRunDAO
 from app.dao.job_dao import JobDAO
 from app.dao.source_dao import SourceDAO
 from app.exceptions.base import BusinessError
-from app.exceptions.codes import SOURCE_DISABLED, SOURCE_NOT_FOUND
+from app.exceptions.codes import INVALID_REQUEST, SOURCE_DISABLED, SOURCE_NOT_FOUND
 from app.service.compliance_service import ComplianceService
 
 logger = logging.getLogger(__name__)
@@ -31,7 +31,10 @@ class CrawlService:
 
         try:
             self.compliance.validate_source_allowed(source)
-            adapter = get_adapter(source_code)
+            try:
+                adapter = get_adapter(source_code, config=source.config_json or {})
+            except KeyError as exc:
+                raise BusinessError(INVALID_REQUEST, str(exc), 400) from exc
             normalized_jobs = await adapter.crawl()
             inserted_count, updated_count = await self.job_dao.upsert_jobs(
                 session,
@@ -47,19 +50,27 @@ class CrawlService:
             )
             await session.commit()
 
-            return {
+            result = {
                 "run_id": run.id,
                 "status": getattr(run.status, "value", str(run.status)),
                 "crawled_count": len(normalized_jobs),
                 "inserted_count": inserted_count,
                 "updated_count": updated_count,
             }
+            crawl_meta = getattr(adapter, "last_crawl_meta", None)
+            if isinstance(crawl_meta, dict):
+                result["crawl_meta"] = crawl_meta
+            return result
         except Exception as exc:
-            await self.run_dao.finish_failed(session, run, str(exc))
-            if self.compliance.should_pause_for_risk(str(exc)):
-                source.enabled = False
-                source.paused_reason = f"auto-paused due to risk: {str(exc)[:200]}"
-            await session.commit()
+            # Rollback aborted transaction first, then persist failure status in a fresh tx.
+            await session.rollback()
+            failed_run = await self.run_dao.get_by_id(session, run.id)
+            if failed_run is not None:
+                await self.run_dao.finish_failed(session, failed_run, str(exc))
+                if self.compliance.should_pause_for_risk(str(exc)):
+                    source.enabled = False
+                    source.paused_reason = f"auto-paused due to risk: {str(exc)[:200]}"
+                await session.commit()
             logger.exception("crawl failed", extra={"source_code": source_code, "run_id": run.id})
             raise
 

@@ -60,55 +60,55 @@ export function JobsFilterForm({ initial, onApply }: JobsFilterFormProps): JSX.E
   return (
     <form className="card grid gap-3 md:grid-cols-4" onSubmit={submit}>
       <label className="md:col-span-2">
-        <span className="mb-1 block text-xs font-semibold uppercase tracking-wide text-slate-500">Keyword</span>
-        <input className="input" placeholder="FastAPI / Data Engineer" {...form.register("keyword")} />
+        <span className="mb-1 block text-xs font-semibold uppercase tracking-wide text-slate-500">关键词</span>
+        <input className="input" placeholder="FastAPI / 数据工程师" {...form.register("keyword")} />
       </label>
       <label>
-        <span className="mb-1 block text-xs font-semibold uppercase tracking-wide text-slate-500">Province</span>
-        <input className="input" placeholder="Guangdong" {...form.register("province")} />
+        <span className="mb-1 block text-xs font-semibold uppercase tracking-wide text-slate-500">省份</span>
+        <input className="input" placeholder="广东" {...form.register("province")} />
       </label>
       <label>
-        <span className="mb-1 block text-xs font-semibold uppercase tracking-wide text-slate-500">City</span>
-        <input className="input" placeholder="Shenzhen" {...form.register("city")} />
+        <span className="mb-1 block text-xs font-semibold uppercase tracking-wide text-slate-500">城市</span>
+        <input className="input" placeholder="深圳" {...form.register("city")} />
       </label>
       <label>
-        <span className="mb-1 block text-xs font-semibold uppercase tracking-wide text-slate-500">Category</span>
-        <input className="input" placeholder="Backend Engineering" {...form.register("category")} />
+        <span className="mb-1 block text-xs font-semibold uppercase tracking-wide text-slate-500">岗位分类</span>
+        <input className="input" placeholder="后端开发" {...form.register("category")} />
       </label>
       <label>
-        <span className="mb-1 block text-xs font-semibold uppercase tracking-wide text-slate-500">Education</span>
+        <span className="mb-1 block text-xs font-semibold uppercase tracking-wide text-slate-500">学历要求</span>
         <select className="select" {...form.register("education")}>
-          <option value="">All</option>
-          <option value="unknown">Unknown</option>
-          <option value="college">College</option>
-          <option value="bachelor">Bachelor</option>
-          <option value="master">Master</option>
-          <option value="phd">PhD</option>
+          <option value="">全部</option>
+          <option value="unknown">不限</option>
+          <option value="college">大专</option>
+          <option value="bachelor">本科</option>
+          <option value="master">硕士</option>
+          <option value="phd">博士</option>
         </select>
       </label>
       <label>
-        <span className="mb-1 block text-xs font-semibold uppercase tracking-wide text-slate-500">Exp (months)</span>
+        <span className="mb-1 block text-xs font-semibold uppercase tracking-wide text-slate-500">经验(月)</span>
         <input className="input" inputMode="numeric" placeholder="12" {...form.register("experience_min")} />
       </label>
       <label>
-        <span className="mb-1 block text-xs font-semibold uppercase tracking-wide text-slate-500">Salary Min</span>
+        <span className="mb-1 block text-xs font-semibold uppercase tracking-wide text-slate-500">最低薪资</span>
         <input className="input" inputMode="numeric" placeholder="15000" {...form.register("salary_min")} />
       </label>
       <label>
-        <span className="mb-1 block text-xs font-semibold uppercase tracking-wide text-slate-500">Salary Max</span>
+        <span className="mb-1 block text-xs font-semibold uppercase tracking-wide text-slate-500">最高薪资</span>
         <input className="input" inputMode="numeric" placeholder="50000" {...form.register("salary_max")} />
       </label>
       <label>
-        <span className="mb-1 block text-xs font-semibold uppercase tracking-wide text-slate-500">Sort</span>
+        <span className="mb-1 block text-xs font-semibold uppercase tracking-wide text-slate-500">排序</span>
         <select className="select" {...form.register("sort_by")}>
-          <option value="time">Newest</option>
-          <option value="salary">Salary</option>
-          <option value="relevance">Relevance</option>
+          <option value="time">最新发布</option>
+          <option value="salary">薪资优先</option>
+          <option value="relevance">相关度</option>
         </select>
       </label>
       <div className="flex items-end gap-2 md:col-span-2">
         <button type="submit" className="btn-primary">
-          Apply Filters
+          应用筛选
         </button>
         <button
           type="button"
@@ -118,7 +118,7 @@ export function JobsFilterForm({ initial, onApply }: JobsFilterFormProps): JSX.E
             onApply({ page: 1, page_size: initial.page_size ?? 20, sort_by: "time" });
           }}
         >
-          Reset
+          重置
         </button>
       </div>
     </form>

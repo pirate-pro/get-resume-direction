@@ -1,0 +1,336 @@
+INFO:     Started server process [2802683]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+INFO:     127.0.0.1:46460 - "GET /healthz HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46480 - "GET /api/v1/stats/basic HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46462 - "GET /api/v1/campus-events/stats/basic HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46484 - "GET /api/v1/sources HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46488 - "GET /api/v1/jobs?page=1&page_size=3&source=iguopin_jobs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44792 - "GET /api/v1/campus-events/stats/basic HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44766 - "GET /api/v1/campus-events/stats/basic HTTP/1.1" 200 OK
+{"ts": "2026-02-16T12:00:33.810602+00:00", "level": "INFO", "logger": "httpx", "msg": "HTTP Request: GET https://remoteok.com/api \"HTTP/1.1 200 OK\"", "request_id": "9723fe1c-1558-464e-a183-72d5fbf134cb", "trace_id": "9723fe1c-1558-464e-a183-72d5fbf134cb"}
+INFO:     127.0.0.1:48540 - "POST /api/v1/crawler/runs HTTP/1.1" 200 OK
+{"ts": "2026-02-16T12:00:39.748602+00:00", "level": "INFO", "logger": "httpx", "msg": "HTTP Request: POST https://gp-api.iguopin.com/api/jobs/v1/list \"HTTP/1.1 200 OK\"", "request_id": "27b11987-b688-4349-8496-a0ba7b80e83c", "trace_id": "27b11987-b688-4349-8496-a0ba7b80e83c"}
+{"ts": "2026-02-16T12:00:39.762951+00:00", "level": "INFO", "logger": "app.crawler.adapters.iguopin_jobs", "msg": "iguopin_jobs page_fetched nature=113Fc6wc page=1 size=30 total=600", "request_id": "27b11987-b688-4349-8496-a0ba7b80e83c", "trace_id": "27b11987-b688-4349-8496-a0ba7b80e83c"}
+{"ts": "2026-02-16T12:00:40.091263+00:00", "level": "INFO", "logger": "httpx", "msg": "HTTP Request: POST https://gp-api.iguopin.com/api/jobs/v1/list \"HTTP/1.1 200 OK\"", "request_id": "27b11987-b688-4349-8496-a0ba7b80e83c", "trace_id": "27b11987-b688-4349-8496-a0ba7b80e83c"}
+{"ts": "2026-02-16T12:00:40.113159+00:00", "level": "INFO", "logger": "app.crawler.adapters.iguopin_jobs", "msg": "iguopin_jobs page_fetched nature=113Fc6wc page=2 size=30 total=600", "request_id": "27b11987-b688-4349-8496-a0ba7b80e83c", "trace_id": "27b11987-b688-4349-8496-a0ba7b80e83c"}
+{"ts": "2026-02-16T12:00:40.467754+00:00", "level": "INFO", "logger": "httpx", "msg": "HTTP Request: POST https://gp-api.iguopin.com/api/jobs/v1/list \"HTTP/1.1 200 OK\"", "request_id": "27b11987-b688-4349-8496-a0ba7b80e83c", "trace_id": "27b11987-b688-4349-8496-a0ba7b80e83c"}
+{"ts": "2026-02-16T12:00:40.485242+00:00", "level": "INFO", "logger": "app.crawler.adapters.iguopin_jobs", "msg": "iguopin_jobs page_fetched nature=113Fc6wc page=3 size=30 total=600", "request_id": "27b11987-b688-4349-8496-a0ba7b80e83c", "trace_id": "27b11987-b688-4349-8496-a0ba7b80e83c"}
+{"ts": "2026-02-16T12:00:40.804498+00:00", "level": "INFO", "logger": "httpx", "msg": "HTTP Request: POST https://gp-api.iguopin.com/api/jobs/v1/list \"HTTP/1.1 200 OK\"", "request_id": "27b11987-b688-4349-8496-a0ba7b80e83c", "trace_id": "27b11987-b688-4349-8496-a0ba7b80e83c"}
+{"ts": "2026-02-16T12:00:40.820271+00:00", "level": "INFO", "logger": "app.crawler.adapters.iguopin_jobs", "msg": "iguopin_jobs page_fetched nature=113Fc6wc page=4 size=30 total=600", "request_id": "27b11987-b688-4349-8496-a0ba7b80e83c", "trace_id": "27b11987-b688-4349-8496-a0ba7b80e83c"}
+{"ts": "2026-02-16T12:00:41.151199+00:00", "level": "INFO", "logger": "httpx", "msg": "HTTP Request: POST https://gp-api.iguopin.com/api/jobs/v1/list \"HTTP/1.1 200 OK\"", "request_id": "27b11987-b688-4349-8496-a0ba7b80e83c", "trace_id": "27b11987-b688-4349-8496-a0ba7b80e83c"}
+{"ts": "2026-02-16T12:00:41.175541+00:00", "level": "INFO", "logger": "app.crawler.adapters.iguopin_jobs", "msg": "iguopin_jobs page_fetched nature=113Fc6wc page=5 size=30 total=600", "request_id": "27b11987-b688-4349-8496-a0ba7b80e83c", "trace_id": "27b11987-b688-4349-8496-a0ba7b80e83c"}
+{"ts": "2026-02-16T12:00:41.488553+00:00", "level": "INFO", "logger": "httpx", "msg": "HTTP Request: POST https://gp-api.iguopin.com/api/jobs/v1/list \"HTTP/1.1 200 OK\"", "request_id": "27b11987-b688-4349-8496-a0ba7b80e83c", "trace_id": "27b11987-b688-4349-8496-a0ba7b80e83c"}
+{"ts": "2026-02-16T12:00:41.496386+00:00", "level": "INFO", "logger": "app.crawler.adapters.iguopin_jobs", "msg": "iguopin_jobs page_fetched nature=113Fc6wc page=6 size=30 total=600", "request_id": "27b11987-b688-4349-8496-a0ba7b80e83c", "trace_id": "27b11987-b688-4349-8496-a0ba7b80e83c"}
+{"ts": "2026-02-16T12:00:41.798455+00:00", "level": "INFO", "logger": "httpx", "msg": "HTTP Request: POST https://gp-api.iguopin.com/api/jobs/v1/list \"HTTP/1.1 200 OK\"", "request_id": "27b11987-b688-4349-8496-a0ba7b80e83c", "trace_id": "27b11987-b688-4349-8496-a0ba7b80e83c"}
+{"ts": "2026-02-16T12:00:41.803424+00:00", "level": "INFO", "logger": "app.crawler.adapters.iguopin_jobs", "msg": "iguopin_jobs page_fetched nature=113Fc6wc page=7 size=30 total=600", "request_id": "27b11987-b688-4349-8496-a0ba7b80e83c", "trace_id": "27b11987-b688-4349-8496-a0ba7b80e83c"}
+{"ts": "2026-02-16T12:00:42.140635+00:00", "level": "INFO", "logger": "httpx", "msg": "HTTP Request: POST https://gp-api.iguopin.com/api/jobs/v1/list \"HTTP/1.1 200 OK\"", "request_id": "27b11987-b688-4349-8496-a0ba7b80e83c", "trace_id": "27b11987-b688-4349-8496-a0ba7b80e83c"}
+{"ts": "2026-02-16T12:00:42.151909+00:00", "level": "INFO", "logger": "app.crawler.adapters.iguopin_jobs", "msg": "iguopin_jobs page_fetched nature=113Fc6wc page=8 size=30 total=600", "request_id": "27b11987-b688-4349-8496-a0ba7b80e83c", "trace_id": "27b11987-b688-4349-8496-a0ba7b80e83c"}
+{"ts": "2026-02-16T12:00:42.478473+00:00", "level": "INFO", "logger": "httpx", "msg": "HTTP Request: POST https://gp-api.iguopin.com/api/jobs/v1/list \"HTTP/1.1 200 OK\"", "request_id": "27b11987-b688-4349-8496-a0ba7b80e83c", "trace_id": "27b11987-b688-4349-8496-a0ba7b80e83c"}
+{"ts": "2026-02-16T12:00:42.492743+00:00", "level": "INFO", "logger": "app.crawler.adapters.iguopin_jobs", "msg": "iguopin_jobs page_fetched nature=113Fc6wc page=9 size=30 total=600", "request_id": "27b11987-b688-4349-8496-a0ba7b80e83c", "trace_id": "27b11987-b688-4349-8496-a0ba7b80e83c"}
+{"ts": "2026-02-16T12:00:42.819352+00:00", "level": "INFO", "logger": "httpx", "msg": "HTTP Request: POST https://gp-api.iguopin.com/api/jobs/v1/list \"HTTP/1.1 200 OK\"", "request_id": "27b11987-b688-4349-8496-a0ba7b80e83c", "trace_id": "27b11987-b688-4349-8496-a0ba7b80e83c"}
+{"ts": "2026-02-16T12:00:42.837220+00:00", "level": "INFO", "logger": "app.crawler.adapters.iguopin_jobs", "msg": "iguopin_jobs page_fetched nature=113Fc6wc page=10 size=30 total=600", "request_id": "27b11987-b688-4349-8496-a0ba7b80e83c", "trace_id": "27b11987-b688-4349-8496-a0ba7b80e83c"}
+{"ts": "2026-02-16T12:00:43.185671+00:00", "level": "INFO", "logger": "httpx", "msg": "HTTP Request: POST https://gp-api.iguopin.com/api/jobs/v1/list \"HTTP/1.1 200 OK\"", "request_id": "27b11987-b688-4349-8496-a0ba7b80e83c", "trace_id": "27b11987-b688-4349-8496-a0ba7b80e83c"}
+{"ts": "2026-02-16T12:00:43.198399+00:00", "level": "INFO", "logger": "app.crawler.adapters.iguopin_jobs", "msg": "iguopin_jobs page_fetched nature=113Fc6wc page=11 size=30 total=600", "request_id": "27b11987-b688-4349-8496-a0ba7b80e83c", "trace_id": "27b11987-b688-4349-8496-a0ba7b80e83c"}
+{"ts": "2026-02-16T12:00:43.516943+00:00", "level": "INFO", "logger": "httpx", "msg": "HTTP Request: POST https://gp-api.iguopin.com/api/jobs/v1/list \"HTTP/1.1 200 OK\"", "request_id": "27b11987-b688-4349-8496-a0ba7b80e83c", "trace_id": "27b11987-b688-4349-8496-a0ba7b80e83c"}
+{"ts": "2026-02-16T12:00:43.549474+00:00", "level": "INFO", "logger": "app.crawler.adapters.iguopin_jobs", "msg": "iguopin_jobs page_fetched nature=113Fc6wc page=12 size=30 total=600", "request_id": "27b11987-b688-4349-8496-a0ba7b80e83c", "trace_id": "27b11987-b688-4349-8496-a0ba7b80e83c"}
+{"ts": "2026-02-16T12:00:43.869479+00:00", "level": "INFO", "logger": "httpx", "msg": "HTTP Request: POST https://gp-api.iguopin.com/api/jobs/v1/list \"HTTP/1.1 200 OK\"", "request_id": "27b11987-b688-4349-8496-a0ba7b80e83c", "trace_id": "27b11987-b688-4349-8496-a0ba7b80e83c"}
+{"ts": "2026-02-16T12:00:43.883474+00:00", "level": "INFO", "logger": "app.crawler.adapters.iguopin_jobs", "msg": "iguopin_jobs page_fetched nature=113Fc6wc page=13 size=30 total=600", "request_id": "27b11987-b688-4349-8496-a0ba7b80e83c", "trace_id": "27b11987-b688-4349-8496-a0ba7b80e83c"}
+{"ts": "2026-02-16T12:00:44.214442+00:00", "level": "INFO", "logger": "httpx", "msg": "HTTP Request: POST https://gp-api.iguopin.com/api/jobs/v1/list \"HTTP/1.1 200 OK\"", "request_id": "27b11987-b688-4349-8496-a0ba7b80e83c", "trace_id": "27b11987-b688-4349-8496-a0ba7b80e83c"}
+{"ts": "2026-02-16T12:00:44.231114+00:00", "level": "INFO", "logger": "app.crawler.adapters.iguopin_jobs", "msg": "iguopin_jobs page_fetched nature=113Fc6wc page=14 size=30 total=600", "request_id": "27b11987-b688-4349-8496-a0ba7b80e83c", "trace_id": "27b11987-b688-4349-8496-a0ba7b80e83c"}
+{"ts": "2026-02-16T12:00:44.569372+00:00", "level": "INFO", "logger": "httpx", "msg": "HTTP Request: POST https://gp-api.iguopin.com/api/jobs/v1/list \"HTTP/1.1 200 OK\"", "request_id": "27b11987-b688-4349-8496-a0ba7b80e83c", "trace_id": "27b11987-b688-4349-8496-a0ba7b80e83c"}
+{"ts": "2026-02-16T12:00:44.584195+00:00", "level": "INFO", "logger": "app.crawler.adapters.iguopin_jobs", "msg": "iguopin_jobs page_fetched nature=113Fc6wc page=15 size=30 total=600", "request_id": "27b11987-b688-4349-8496-a0ba7b80e83c", "trace_id": "27b11987-b688-4349-8496-a0ba7b80e83c"}
+{"ts": "2026-02-16T12:00:44.915156+00:00", "level": "INFO", "logger": "httpx", "msg": "HTTP Request: POST https://gp-api.iguopin.com/api/jobs/v1/list \"HTTP/1.1 200 OK\"", "request_id": "27b11987-b688-4349-8496-a0ba7b80e83c", "trace_id": "27b11987-b688-4349-8496-a0ba7b80e83c"}
+{"ts": "2026-02-16T12:00:44.929123+00:00", "level": "INFO", "logger": "app.crawler.adapters.iguopin_jobs", "msg": "iguopin_jobs page_fetched nature=113Fc6wc page=16 size=30 total=600", "request_id": "27b11987-b688-4349-8496-a0ba7b80e83c", "trace_id": "27b11987-b688-4349-8496-a0ba7b80e83c"}
+{"ts": "2026-02-16T12:00:45.267080+00:00", "level": "INFO", "logger": "httpx", "msg": "HTTP Request: POST https://gp-api.iguopin.com/api/jobs/v1/list \"HTTP/1.1 200 OK\"", "request_id": "27b11987-b688-4349-8496-a0ba7b80e83c", "trace_id": "27b11987-b688-4349-8496-a0ba7b80e83c"}
+{"ts": "2026-02-16T12:00:45.281052+00:00", "level": "INFO", "logger": "app.crawler.adapters.iguopin_jobs", "msg": "iguopin_jobs page_fetched nature=113Fc6wc page=17 size=30 total=600", "request_id": "27b11987-b688-4349-8496-a0ba7b80e83c", "trace_id": "27b11987-b688-4349-8496-a0ba7b80e83c"}
+{"ts": "2026-02-16T12:00:45.613007+00:00", "level": "INFO", "logger": "httpx", "msg": "HTTP Request: POST https://gp-api.iguopin.com/api/jobs/v1/list \"HTTP/1.1 200 OK\"", "request_id": "27b11987-b688-4349-8496-a0ba7b80e83c", "trace_id": "27b11987-b688-4349-8496-a0ba7b80e83c"}
+{"ts": "2026-02-16T12:00:45.630577+00:00", "level": "INFO", "logger": "app.crawler.adapters.iguopin_jobs", "msg": "iguopin_jobs page_fetched nature=113Fc6wc page=18 size=30 total=600", "request_id": "27b11987-b688-4349-8496-a0ba7b80e83c", "trace_id": "27b11987-b688-4349-8496-a0ba7b80e83c"}
+{"ts": "2026-02-16T12:00:45.982270+00:00", "level": "INFO", "logger": "httpx", "msg": "HTTP Request: POST https://gp-api.iguopin.com/api/jobs/v1/list \"HTTP/1.1 200 OK\"", "request_id": "27b11987-b688-4349-8496-a0ba7b80e83c", "trace_id": "27b11987-b688-4349-8496-a0ba7b80e83c"}
+{"ts": "2026-02-16T12:00:45.998502+00:00", "level": "INFO", "logger": "app.crawler.adapters.iguopin_jobs", "msg": "iguopin_jobs page_fetched nature=113Fc6wc page=19 size=30 total=600", "request_id": "27b11987-b688-4349-8496-a0ba7b80e83c", "trace_id": "27b11987-b688-4349-8496-a0ba7b80e83c"}
+{"ts": "2026-02-16T12:00:46.314488+00:00", "level": "INFO", "logger": "httpx", "msg": "HTTP Request: POST https://gp-api.iguopin.com/api/jobs/v1/list \"HTTP/1.1 200 OK\"", "request_id": "27b11987-b688-4349-8496-a0ba7b80e83c", "trace_id": "27b11987-b688-4349-8496-a0ba7b80e83c"}
+{"ts": "2026-02-16T12:00:46.328585+00:00", "level": "INFO", "logger": "app.crawler.adapters.iguopin_jobs", "msg": "iguopin_jobs page_fetched nature=113Fc6wc page=20 size=30 total=600", "request_id": "27b11987-b688-4349-8496-a0ba7b80e83c", "trace_id": "27b11987-b688-4349-8496-a0ba7b80e83c"}
+{"ts": "2026-02-16T12:00:46.442036+00:00", "level": "INFO", "logger": "httpx", "msg": "HTTP Request: POST https://gp-api.iguopin.com/api/jobs/v1/list \"HTTP/1.1 200 OK\"", "request_id": "27b11987-b688-4349-8496-a0ba7b80e83c", "trace_id": "27b11987-b688-4349-8496-a0ba7b80e83c"}
+{"ts": "2026-02-16T12:00:46.461010+00:00", "level": "INFO", "logger": "app.crawler.adapters.iguopin_jobs", "msg": "iguopin_jobs page_fetched nature=114BeBeq page=1 size=30 total=600", "request_id": "27b11987-b688-4349-8496-a0ba7b80e83c", "trace_id": "27b11987-b688-4349-8496-a0ba7b80e83c"}
+{"ts": "2026-02-16T12:00:46.800991+00:00", "level": "INFO", "logger": "httpx", "msg": "HTTP Request: POST https://gp-api.iguopin.com/api/jobs/v1/list \"HTTP/1.1 200 OK\"", "request_id": "27b11987-b688-4349-8496-a0ba7b80e83c", "trace_id": "27b11987-b688-4349-8496-a0ba7b80e83c"}
+{"ts": "2026-02-16T12:00:46.818680+00:00", "level": "INFO", "logger": "app.crawler.adapters.iguopin_jobs", "msg": "iguopin_jobs page_fetched nature=114BeBeq page=2 size=30 total=600", "request_id": "27b11987-b688-4349-8496-a0ba7b80e83c", "trace_id": "27b11987-b688-4349-8496-a0ba7b80e83c"}
+{"ts": "2026-02-16T12:00:47.152366+00:00", "level": "INFO", "logger": "httpx", "msg": "HTTP Request: POST https://gp-api.iguopin.com/api/jobs/v1/list \"HTTP/1.1 200 OK\"", "request_id": "27b11987-b688-4349-8496-a0ba7b80e83c", "trace_id": "27b11987-b688-4349-8496-a0ba7b80e83c"}
+{"ts": "2026-02-16T12:00:47.166401+00:00", "level": "INFO", "logger": "app.crawler.adapters.iguopin_jobs", "msg": "iguopin_jobs page_fetched nature=114BeBeq page=3 size=30 total=600", "request_id": "27b11987-b688-4349-8496-a0ba7b80e83c", "trace_id": "27b11987-b688-4349-8496-a0ba7b80e83c"}
+{"ts": "2026-02-16T12:00:47.485715+00:00", "level": "INFO", "logger": "httpx", "msg": "HTTP Request: POST https://gp-api.iguopin.com/api/jobs/v1/list \"HTTP/1.1 200 OK\"", "request_id": "27b11987-b688-4349-8496-a0ba7b80e83c", "trace_id": "27b11987-b688-4349-8496-a0ba7b80e83c"}
+{"ts": "2026-02-16T12:00:47.501484+00:00", "level": "INFO", "logger": "app.crawler.adapters.iguopin_jobs", "msg": "iguopin_jobs page_fetched nature=114BeBeq page=4 size=30 total=600", "request_id": "27b11987-b688-4349-8496-a0ba7b80e83c", "trace_id": "27b11987-b688-4349-8496-a0ba7b80e83c"}
+{"ts": "2026-02-16T12:00:47.853734+00:00", "level": "INFO", "logger": "httpx", "msg": "HTTP Request: POST https://gp-api.iguopin.com/api/jobs/v1/list \"HTTP/1.1 200 OK\"", "request_id": "27b11987-b688-4349-8496-a0ba7b80e83c", "trace_id": "27b11987-b688-4349-8496-a0ba7b80e83c"}
+{"ts": "2026-02-16T12:00:47.874392+00:00", "level": "INFO", "logger": "app.crawler.adapters.iguopin_jobs", "msg": "iguopin_jobs page_fetched nature=114BeBeq page=5 size=30 total=600", "request_id": "27b11987-b688-4349-8496-a0ba7b80e83c", "trace_id": "27b11987-b688-4349-8496-a0ba7b80e83c"}
+{"ts": "2026-02-16T12:00:48.187282+00:00", "level": "INFO", "logger": "httpx", "msg": "HTTP Request: POST https://gp-api.iguopin.com/api/jobs/v1/list \"HTTP/1.1 200 OK\"", "request_id": "27b11987-b688-4349-8496-a0ba7b80e83c", "trace_id": "27b11987-b688-4349-8496-a0ba7b80e83c"}
+{"ts": "2026-02-16T12:00:48.193593+00:00", "level": "INFO", "logger": "app.crawler.adapters.iguopin_jobs", "msg": "iguopin_jobs page_fetched nature=114BeBeq page=6 size=30 total=600", "request_id": "27b11987-b688-4349-8496-a0ba7b80e83c", "trace_id": "27b11987-b688-4349-8496-a0ba7b80e83c"}
+{"ts": "2026-02-16T12:00:48.509314+00:00", "level": "INFO", "logger": "httpx", "msg": "HTTP Request: POST https://gp-api.iguopin.com/api/jobs/v1/list \"HTTP/1.1 200 OK\"", "request_id": "27b11987-b688-4349-8496-a0ba7b80e83c", "trace_id": "27b11987-b688-4349-8496-a0ba7b80e83c"}
+{"ts": "2026-02-16T12:00:48.514234+00:00", "level": "INFO", "logger": "app.crawler.adapters.iguopin_jobs", "msg": "iguopin_jobs page_fetched nature=114BeBeq page=7 size=30 total=600", "request_id": "27b11987-b688-4349-8496-a0ba7b80e83c", "trace_id": "27b11987-b688-4349-8496-a0ba7b80e83c"}
+{"ts": "2026-02-16T12:00:48.847292+00:00", "level": "INFO", "logger": "httpx", "msg": "HTTP Request: POST https://gp-api.iguopin.com/api/jobs/v1/list \"HTTP/1.1 200 OK\"", "request_id": "27b11987-b688-4349-8496-a0ba7b80e83c", "trace_id": "27b11987-b688-4349-8496-a0ba7b80e83c"}
+{"ts": "2026-02-16T12:00:48.855424+00:00", "level": "INFO", "logger": "app.crawler.adapters.iguopin_jobs", "msg": "iguopin_jobs page_fetched nature=114BeBeq page=8 size=30 total=600", "request_id": "27b11987-b688-4349-8496-a0ba7b80e83c", "trace_id": "27b11987-b688-4349-8496-a0ba7b80e83c"}
+{"ts": "2026-02-16T12:00:49.189432+00:00", "level": "INFO", "logger": "httpx", "msg": "HTTP Request: POST https://gp-api.iguopin.com/api/jobs/v1/list \"HTTP/1.1 200 OK\"", "request_id": "27b11987-b688-4349-8496-a0ba7b80e83c", "trace_id": "27b11987-b688-4349-8496-a0ba7b80e83c"}
+{"ts": "2026-02-16T12:00:49.202046+00:00", "level": "INFO", "logger": "app.crawler.adapters.iguopin_jobs", "msg": "iguopin_jobs page_fetched nature=114BeBeq page=9 size=30 total=600", "request_id": "27b11987-b688-4349-8496-a0ba7b80e83c", "trace_id": "27b11987-b688-4349-8496-a0ba7b80e83c"}
+{"ts": "2026-02-16T12:00:49.550649+00:00", "level": "INFO", "logger": "httpx", "msg": "HTTP Request: POST https://gp-api.iguopin.com/api/jobs/v1/list \"HTTP/1.1 200 OK\"", "request_id": "27b11987-b688-4349-8496-a0ba7b80e83c", "trace_id": "27b11987-b688-4349-8496-a0ba7b80e83c"}
+{"ts": "2026-02-16T12:00:49.567159+00:00", "level": "INFO", "logger": "app.crawler.adapters.iguopin_jobs", "msg": "iguopin_jobs page_fetched nature=114BeBeq page=10 size=30 total=600", "request_id": "27b11987-b688-4349-8496-a0ba7b80e83c", "trace_id": "27b11987-b688-4349-8496-a0ba7b80e83c"}
+{"ts": "2026-02-16T12:00:49.914434+00:00", "level": "INFO", "logger": "httpx", "msg": "HTTP Request: POST https://gp-api.iguopin.com/api/jobs/v1/list \"HTTP/1.1 200 OK\"", "request_id": "27b11987-b688-4349-8496-a0ba7b80e83c", "trace_id": "27b11987-b688-4349-8496-a0ba7b80e83c"}
+{"ts": "2026-02-16T12:00:49.927058+00:00", "level": "INFO", "logger": "app.crawler.adapters.iguopin_jobs", "msg": "iguopin_jobs page_fetched nature=114BeBeq page=11 size=30 total=600", "request_id": "27b11987-b688-4349-8496-a0ba7b80e83c", "trace_id": "27b11987-b688-4349-8496-a0ba7b80e83c"}
+{"ts": "2026-02-16T12:00:50.263694+00:00", "level": "INFO", "logger": "httpx", "msg": "HTTP Request: POST https://gp-api.iguopin.com/api/jobs/v1/list \"HTTP/1.1 200 OK\"", "request_id": "27b11987-b688-4349-8496-a0ba7b80e83c", "trace_id": "27b11987-b688-4349-8496-a0ba7b80e83c"}
+{"ts": "2026-02-16T12:00:50.273487+00:00", "level": "INFO", "logger": "app.crawler.adapters.iguopin_jobs", "msg": "iguopin_jobs page_fetched nature=114BeBeq page=12 size=30 total=600", "request_id": "27b11987-b688-4349-8496-a0ba7b80e83c", "trace_id": "27b11987-b688-4349-8496-a0ba7b80e83c"}
+{"ts": "2026-02-16T12:00:50.600880+00:00", "level": "INFO", "logger": "httpx", "msg": "HTTP Request: POST https://gp-api.iguopin.com/api/jobs/v1/list \"HTTP/1.1 200 OK\"", "request_id": "27b11987-b688-4349-8496-a0ba7b80e83c", "trace_id": "27b11987-b688-4349-8496-a0ba7b80e83c"}
+{"ts": "2026-02-16T12:00:50.613340+00:00", "level": "INFO", "logger": "app.crawler.adapters.iguopin_jobs", "msg": "iguopin_jobs page_fetched nature=114BeBeq page=13 size=30 total=600", "request_id": "27b11987-b688-4349-8496-a0ba7b80e83c", "trace_id": "27b11987-b688-4349-8496-a0ba7b80e83c"}
+{"ts": "2026-02-16T12:00:50.939148+00:00", "level": "INFO", "logger": "httpx", "msg": "HTTP Request: POST https://gp-api.iguopin.com/api/jobs/v1/list \"HTTP/1.1 200 OK\"", "request_id": "27b11987-b688-4349-8496-a0ba7b80e83c", "trace_id": "27b11987-b688-4349-8496-a0ba7b80e83c"}
+{"ts": "2026-02-16T12:00:50.957304+00:00", "level": "INFO", "logger": "app.crawler.adapters.iguopin_jobs", "msg": "iguopin_jobs page_fetched nature=114BeBeq page=14 size=30 total=600", "request_id": "27b11987-b688-4349-8496-a0ba7b80e83c", "trace_id": "27b11987-b688-4349-8496-a0ba7b80e83c"}
+{"ts": "2026-02-16T12:00:51.298575+00:00", "level": "INFO", "logger": "httpx", "msg": "HTTP Request: POST https://gp-api.iguopin.com/api/jobs/v1/list \"HTTP/1.1 200 OK\"", "request_id": "27b11987-b688-4349-8496-a0ba7b80e83c", "trace_id": "27b11987-b688-4349-8496-a0ba7b80e83c"}
+{"ts": "2026-02-16T12:00:51.312425+00:00", "level": "INFO", "logger": "app.crawler.adapters.iguopin_jobs", "msg": "iguopin_jobs page_fetched nature=114BeBeq page=15 size=30 total=600", "request_id": "27b11987-b688-4349-8496-a0ba7b80e83c", "trace_id": "27b11987-b688-4349-8496-a0ba7b80e83c"}
+{"ts": "2026-02-16T12:00:51.644554+00:00", "level": "INFO", "logger": "httpx", "msg": "HTTP Request: POST https://gp-api.iguopin.com/api/jobs/v1/list \"HTTP/1.1 200 OK\"", "request_id": "27b11987-b688-4349-8496-a0ba7b80e83c", "trace_id": "27b11987-b688-4349-8496-a0ba7b80e83c"}
+{"ts": "2026-02-16T12:00:51.659350+00:00", "level": "INFO", "logger": "app.crawler.adapters.iguopin_jobs", "msg": "iguopin_jobs page_fetched nature=114BeBeq page=16 size=30 total=600", "request_id": "27b11987-b688-4349-8496-a0ba7b80e83c", "trace_id": "27b11987-b688-4349-8496-a0ba7b80e83c"}
+{"ts": "2026-02-16T12:00:52.012507+00:00", "level": "INFO", "logger": "httpx", "msg": "HTTP Request: POST https://gp-api.iguopin.com/api/jobs/v1/list \"HTTP/1.1 200 OK\"", "request_id": "27b11987-b688-4349-8496-a0ba7b80e83c", "trace_id": "27b11987-b688-4349-8496-a0ba7b80e83c"}
+{"ts": "2026-02-16T12:00:52.025108+00:00", "level": "INFO", "logger": "app.crawler.adapters.iguopin_jobs", "msg": "iguopin_jobs page_fetched nature=114BeBeq page=17 size=30 total=600", "request_id": "27b11987-b688-4349-8496-a0ba7b80e83c", "trace_id": "27b11987-b688-4349-8496-a0ba7b80e83c"}
+{"ts": "2026-02-16T12:00:52.373112+00:00", "level": "INFO", "logger": "httpx", "msg": "HTTP Request: POST https://gp-api.iguopin.com/api/jobs/v1/list \"HTTP/1.1 200 OK\"", "request_id": "27b11987-b688-4349-8496-a0ba7b80e83c", "trace_id": "27b11987-b688-4349-8496-a0ba7b80e83c"}
+{"ts": "2026-02-16T12:00:52.387994+00:00", "level": "INFO", "logger": "app.crawler.adapters.iguopin_jobs", "msg": "iguopin_jobs page_fetched nature=114BeBeq page=18 size=30 total=600", "request_id": "27b11987-b688-4349-8496-a0ba7b80e83c", "trace_id": "27b11987-b688-4349-8496-a0ba7b80e83c"}
+{"ts": "2026-02-16T12:00:52.721113+00:00", "level": "INFO", "logger": "httpx", "msg": "HTTP Request: POST https://gp-api.iguopin.com/api/jobs/v1/list \"HTTP/1.1 200 OK\"", "request_id": "27b11987-b688-4349-8496-a0ba7b80e83c", "trace_id": "27b11987-b688-4349-8496-a0ba7b80e83c"}
+{"ts": "2026-02-16T12:00:52.736007+00:00", "level": "INFO", "logger": "app.crawler.adapters.iguopin_jobs", "msg": "iguopin_jobs page_fetched nature=114BeBeq page=19 size=30 total=600", "request_id": "27b11987-b688-4349-8496-a0ba7b80e83c", "trace_id": "27b11987-b688-4349-8496-a0ba7b80e83c"}
+{"ts": "2026-02-16T12:00:53.073145+00:00", "level": "INFO", "logger": "httpx", "msg": "HTTP Request: POST https://gp-api.iguopin.com/api/jobs/v1/list \"HTTP/1.1 200 OK\"", "request_id": "27b11987-b688-4349-8496-a0ba7b80e83c", "trace_id": "27b11987-b688-4349-8496-a0ba7b80e83c"}
+{"ts": "2026-02-16T12:00:53.084621+00:00", "level": "INFO", "logger": "app.crawler.adapters.iguopin_jobs", "msg": "iguopin_jobs page_fetched nature=114BeBeq page=20 size=30 total=600", "request_id": "27b11987-b688-4349-8496-a0ba7b80e83c", "trace_id": "27b11987-b688-4349-8496-a0ba7b80e83c"}
+{"ts": "2026-02-16T12:00:53.201260+00:00", "level": "INFO", "logger": "httpx", "msg": "HTTP Request: POST https://gp-api.iguopin.com/api/jobs/v1/list \"HTTP/1.1 200 OK\"", "request_id": "27b11987-b688-4349-8496-a0ba7b80e83c", "trace_id": "27b11987-b688-4349-8496-a0ba7b80e83c"}
+{"ts": "2026-02-16T12:00:53.212521+00:00", "level": "INFO", "logger": "app.crawler.adapters.iguopin_jobs", "msg": "iguopin_jobs page_fetched nature=115xW5oQ page=1 size=30 total=600", "request_id": "27b11987-b688-4349-8496-a0ba7b80e83c", "trace_id": "27b11987-b688-4349-8496-a0ba7b80e83c"}
+{"ts": "2026-02-16T12:00:53.533085+00:00", "level": "INFO", "logger": "httpx", "msg": "HTTP Request: POST https://gp-api.iguopin.com/api/jobs/v1/list \"HTTP/1.1 200 OK\"", "request_id": "27b11987-b688-4349-8496-a0ba7b80e83c", "trace_id": "27b11987-b688-4349-8496-a0ba7b80e83c"}
+{"ts": "2026-02-16T12:00:53.547938+00:00", "level": "INFO", "logger": "app.crawler.adapters.iguopin_jobs", "msg": "iguopin_jobs page_fetched nature=115xW5oQ page=2 size=30 total=600", "request_id": "27b11987-b688-4349-8496-a0ba7b80e83c", "trace_id": "27b11987-b688-4349-8496-a0ba7b80e83c"}
+{"ts": "2026-02-16T12:00:53.882561+00:00", "level": "INFO", "logger": "httpx", "msg": "HTTP Request: POST https://gp-api.iguopin.com/api/jobs/v1/list \"HTTP/1.1 200 OK\"", "request_id": "27b11987-b688-4349-8496-a0ba7b80e83c", "trace_id": "27b11987-b688-4349-8496-a0ba7b80e83c"}
+{"ts": "2026-02-16T12:00:53.895749+00:00", "level": "INFO", "logger": "app.crawler.adapters.iguopin_jobs", "msg": "iguopin_jobs page_fetched nature=115xW5oQ page=3 size=30 total=600", "request_id": "27b11987-b688-4349-8496-a0ba7b80e83c", "trace_id": "27b11987-b688-4349-8496-a0ba7b80e83c"}
+{"ts": "2026-02-16T12:00:54.228255+00:00", "level": "INFO", "logger": "httpx", "msg": "HTTP Request: POST https://gp-api.iguopin.com/api/jobs/v1/list \"HTTP/1.1 200 OK\"", "request_id": "27b11987-b688-4349-8496-a0ba7b80e83c", "trace_id": "27b11987-b688-4349-8496-a0ba7b80e83c"}
+{"ts": "2026-02-16T12:00:54.243291+00:00", "level": "INFO", "logger": "app.crawler.adapters.iguopin_jobs", "msg": "iguopin_jobs page_fetched nature=115xW5oQ page=4 size=30 total=600", "request_id": "27b11987-b688-4349-8496-a0ba7b80e83c", "trace_id": "27b11987-b688-4349-8496-a0ba7b80e83c"}
+{"ts": "2026-02-16T12:00:54.577464+00:00", "level": "INFO", "logger": "httpx", "msg": "HTTP Request: POST https://gp-api.iguopin.com/api/jobs/v1/list \"HTTP/1.1 200 OK\"", "request_id": "27b11987-b688-4349-8496-a0ba7b80e83c", "trace_id": "27b11987-b688-4349-8496-a0ba7b80e83c"}
+{"ts": "2026-02-16T12:00:54.596822+00:00", "level": "INFO", "logger": "app.crawler.adapters.iguopin_jobs", "msg": "iguopin_jobs page_fetched nature=115xW5oQ page=5 size=30 total=600", "request_id": "27b11987-b688-4349-8496-a0ba7b80e83c", "trace_id": "27b11987-b688-4349-8496-a0ba7b80e83c"}
+{"ts": "2026-02-16T12:00:54.912818+00:00", "level": "INFO", "logger": "httpx", "msg": "HTTP Request: POST https://gp-api.iguopin.com/api/jobs/v1/list \"HTTP/1.1 200 OK\"", "request_id": "27b11987-b688-4349-8496-a0ba7b80e83c", "trace_id": "27b11987-b688-4349-8496-a0ba7b80e83c"}
+{"ts": "2026-02-16T12:00:54.919848+00:00", "level": "INFO", "logger": "app.crawler.adapters.iguopin_jobs", "msg": "iguopin_jobs page_fetched nature=115xW5oQ page=6 size=30 total=600", "request_id": "27b11987-b688-4349-8496-a0ba7b80e83c", "trace_id": "27b11987-b688-4349-8496-a0ba7b80e83c"}
+{"ts": "2026-02-16T12:00:55.226589+00:00", "level": "INFO", "logger": "httpx", "msg": "HTTP Request: POST https://gp-api.iguopin.com/api/jobs/v1/list \"HTTP/1.1 200 OK\"", "request_id": "27b11987-b688-4349-8496-a0ba7b80e83c", "trace_id": "27b11987-b688-4349-8496-a0ba7b80e83c"}
+{"ts": "2026-02-16T12:00:55.231755+00:00", "level": "INFO", "logger": "app.crawler.adapters.iguopin_jobs", "msg": "iguopin_jobs page_fetched nature=115xW5oQ page=7 size=30 total=600", "request_id": "27b11987-b688-4349-8496-a0ba7b80e83c", "trace_id": "27b11987-b688-4349-8496-a0ba7b80e83c"}
+{"ts": "2026-02-16T12:00:55.561499+00:00", "level": "INFO", "logger": "httpx", "msg": "HTTP Request: POST https://gp-api.iguopin.com/api/jobs/v1/list \"HTTP/1.1 200 OK\"", "request_id": "27b11987-b688-4349-8496-a0ba7b80e83c", "trace_id": "27b11987-b688-4349-8496-a0ba7b80e83c"}
+{"ts": "2026-02-16T12:00:55.570940+00:00", "level": "INFO", "logger": "app.crawler.adapters.iguopin_jobs", "msg": "iguopin_jobs page_fetched nature=115xW5oQ page=8 size=30 total=600", "request_id": "27b11987-b688-4349-8496-a0ba7b80e83c", "trace_id": "27b11987-b688-4349-8496-a0ba7b80e83c"}
+{"ts": "2026-02-16T12:00:55.896611+00:00", "level": "INFO", "logger": "httpx", "msg": "HTTP Request: POST https://gp-api.iguopin.com/api/jobs/v1/list \"HTTP/1.1 200 OK\"", "request_id": "27b11987-b688-4349-8496-a0ba7b80e83c", "trace_id": "27b11987-b688-4349-8496-a0ba7b80e83c"}
+{"ts": "2026-02-16T12:00:55.909310+00:00", "level": "INFO", "logger": "app.crawler.adapters.iguopin_jobs", "msg": "iguopin_jobs page_fetched nature=115xW5oQ page=9 size=30 total=600", "request_id": "27b11987-b688-4349-8496-a0ba7b80e83c", "trace_id": "27b11987-b688-4349-8496-a0ba7b80e83c"}
+{"ts": "2026-02-16T12:00:56.240423+00:00", "level": "INFO", "logger": "httpx", "msg": "HTTP Request: POST https://gp-api.iguopin.com/api/jobs/v1/list \"HTTP/1.1 200 OK\"", "request_id": "27b11987-b688-4349-8496-a0ba7b80e83c", "trace_id": "27b11987-b688-4349-8496-a0ba7b80e83c"}
+{"ts": "2026-02-16T12:00:56.256347+00:00", "level": "INFO", "logger": "app.crawler.adapters.iguopin_jobs", "msg": "iguopin_jobs page_fetched nature=115xW5oQ page=10 size=30 total=600", "request_id": "27b11987-b688-4349-8496-a0ba7b80e83c", "trace_id": "27b11987-b688-4349-8496-a0ba7b80e83c"}
+{"ts": "2026-02-16T12:00:56.589298+00:00", "level": "INFO", "logger": "httpx", "msg": "HTTP Request: POST https://gp-api.iguopin.com/api/jobs/v1/list \"HTTP/1.1 200 OK\"", "request_id": "27b11987-b688-4349-8496-a0ba7b80e83c", "trace_id": "27b11987-b688-4349-8496-a0ba7b80e83c"}
+{"ts": "2026-02-16T12:00:56.601237+00:00", "level": "INFO", "logger": "app.crawler.adapters.iguopin_jobs", "msg": "iguopin_jobs page_fetched nature=115xW5oQ page=11 size=30 total=600", "request_id": "27b11987-b688-4349-8496-a0ba7b80e83c", "trace_id": "27b11987-b688-4349-8496-a0ba7b80e83c"}
+{"ts": "2026-02-16T12:00:56.913957+00:00", "level": "INFO", "logger": "httpx", "msg": "HTTP Request: POST https://gp-api.iguopin.com/api/jobs/v1/list \"HTTP/1.1 200 OK\"", "request_id": "27b11987-b688-4349-8496-a0ba7b80e83c", "trace_id": "27b11987-b688-4349-8496-a0ba7b80e83c"}
+{"ts": "2026-02-16T12:00:56.923509+00:00", "level": "INFO", "logger": "app.crawler.adapters.iguopin_jobs", "msg": "iguopin_jobs page_fetched nature=115xW5oQ page=12 size=30 total=600", "request_id": "27b11987-b688-4349-8496-a0ba7b80e83c", "trace_id": "27b11987-b688-4349-8496-a0ba7b80e83c"}
+{"ts": "2026-02-16T12:00:57.243516+00:00", "level": "INFO", "logger": "httpx", "msg": "HTTP Request: POST https://gp-api.iguopin.com/api/jobs/v1/list \"HTTP/1.1 200 OK\"", "request_id": "27b11987-b688-4349-8496-a0ba7b80e83c", "trace_id": "27b11987-b688-4349-8496-a0ba7b80e83c"}
+{"ts": "2026-02-16T12:00:57.254834+00:00", "level": "INFO", "logger": "app.crawler.adapters.iguopin_jobs", "msg": "iguopin_jobs page_fetched nature=115xW5oQ page=13 size=30 total=600", "request_id": "27b11987-b688-4349-8496-a0ba7b80e83c", "trace_id": "27b11987-b688-4349-8496-a0ba7b80e83c"}
+{"ts": "2026-02-16T12:00:57.587271+00:00", "level": "INFO", "logger": "httpx", "msg": "HTTP Request: POST https://gp-api.iguopin.com/api/jobs/v1/list \"HTTP/1.1 200 OK\"", "request_id": "27b11987-b688-4349-8496-a0ba7b80e83c", "trace_id": "27b11987-b688-4349-8496-a0ba7b80e83c"}
+{"ts": "2026-02-16T12:00:57.603488+00:00", "level": "INFO", "logger": "app.crawler.adapters.iguopin_jobs", "msg": "iguopin_jobs page_fetched nature=115xW5oQ page=14 size=30 total=600", "request_id": "27b11987-b688-4349-8496-a0ba7b80e83c", "trace_id": "27b11987-b688-4349-8496-a0ba7b80e83c"}
+{"ts": "2026-02-16T12:00:57.948338+00:00", "level": "INFO", "logger": "httpx", "msg": "HTTP Request: POST https://gp-api.iguopin.com/api/jobs/v1/list \"HTTP/1.1 200 OK\"", "request_id": "27b11987-b688-4349-8496-a0ba7b80e83c", "trace_id": "27b11987-b688-4349-8496-a0ba7b80e83c"}
+{"ts": "2026-02-16T12:00:57.962338+00:00", "level": "INFO", "logger": "app.crawler.adapters.iguopin_jobs", "msg": "iguopin_jobs page_fetched nature=115xW5oQ page=15 size=30 total=600", "request_id": "27b11987-b688-4349-8496-a0ba7b80e83c", "trace_id": "27b11987-b688-4349-8496-a0ba7b80e83c"}
+{"ts": "2026-02-16T12:00:58.296611+00:00", "level": "INFO", "logger": "httpx", "msg": "HTTP Request: POST https://gp-api.iguopin.com/api/jobs/v1/list \"HTTP/1.1 200 OK\"", "request_id": "27b11987-b688-4349-8496-a0ba7b80e83c", "trace_id": "27b11987-b688-4349-8496-a0ba7b80e83c"}
+{"ts": "2026-02-16T12:00:58.309511+00:00", "level": "INFO", "logger": "app.crawler.adapters.iguopin_jobs", "msg": "iguopin_jobs page_fetched nature=115xW5oQ page=16 size=30 total=600", "request_id": "27b11987-b688-4349-8496-a0ba7b80e83c", "trace_id": "27b11987-b688-4349-8496-a0ba7b80e83c"}
+{"ts": "2026-02-16T12:00:58.644719+00:00", "level": "INFO", "logger": "httpx", "msg": "HTTP Request: POST https://gp-api.iguopin.com/api/jobs/v1/list \"HTTP/1.1 200 OK\"", "request_id": "27b11987-b688-4349-8496-a0ba7b80e83c", "trace_id": "27b11987-b688-4349-8496-a0ba7b80e83c"}
+{"ts": "2026-02-16T12:00:58.656777+00:00", "level": "INFO", "logger": "app.crawler.adapters.iguopin_jobs", "msg": "iguopin_jobs page_fetched nature=115xW5oQ page=17 size=30 total=600", "request_id": "27b11987-b688-4349-8496-a0ba7b80e83c", "trace_id": "27b11987-b688-4349-8496-a0ba7b80e83c"}
+{"ts": "2026-02-16T12:00:58.984360+00:00", "level": "INFO", "logger": "httpx", "msg": "HTTP Request: POST https://gp-api.iguopin.com/api/jobs/v1/list \"HTTP/1.1 200 OK\"", "request_id": "27b11987-b688-4349-8496-a0ba7b80e83c", "trace_id": "27b11987-b688-4349-8496-a0ba7b80e83c"}
+{"ts": "2026-02-16T12:00:58.998739+00:00", "level": "INFO", "logger": "app.crawler.adapters.iguopin_jobs", "msg": "iguopin_jobs page_fetched nature=115xW5oQ page=18 size=30 total=600", "request_id": "27b11987-b688-4349-8496-a0ba7b80e83c", "trace_id": "27b11987-b688-4349-8496-a0ba7b80e83c"}
+{"ts": "2026-02-16T12:00:59.330089+00:00", "level": "INFO", "logger": "httpx", "msg": "HTTP Request: POST https://gp-api.iguopin.com/api/jobs/v1/list \"HTTP/1.1 200 OK\"", "request_id": "27b11987-b688-4349-8496-a0ba7b80e83c", "trace_id": "27b11987-b688-4349-8496-a0ba7b80e83c"}
+{"ts": "2026-02-16T12:00:59.346054+00:00", "level": "INFO", "logger": "app.crawler.adapters.iguopin_jobs", "msg": "iguopin_jobs page_fetched nature=115xW5oQ page=19 size=30 total=600", "request_id": "27b11987-b688-4349-8496-a0ba7b80e83c", "trace_id": "27b11987-b688-4349-8496-a0ba7b80e83c"}
+{"ts": "2026-02-16T12:00:59.667297+00:00", "level": "INFO", "logger": "httpx", "msg": "HTTP Request: POST https://gp-api.iguopin.com/api/jobs/v1/list \"HTTP/1.1 200 OK\"", "request_id": "27b11987-b688-4349-8496-a0ba7b80e83c", "trace_id": "27b11987-b688-4349-8496-a0ba7b80e83c"}
+{"ts": "2026-02-16T12:00:59.679132+00:00", "level": "INFO", "logger": "app.crawler.adapters.iguopin_jobs", "msg": "iguopin_jobs page_fetched nature=115xW5oQ page=20 size=30 total=600", "request_id": "27b11987-b688-4349-8496-a0ba7b80e83c", "trace_id": "27b11987-b688-4349-8496-a0ba7b80e83c"}
+{"ts": "2026-02-16T12:00:59.818493+00:00", "level": "INFO", "logger": "httpx", "msg": "HTTP Request: POST https://gp-api.iguopin.com/api/jobs/v1/list \"HTTP/1.1 200 OK\"", "request_id": "27b11987-b688-4349-8496-a0ba7b80e83c", "trace_id": "27b11987-b688-4349-8496-a0ba7b80e83c"}
+{"ts": "2026-02-16T12:00:59.828104+00:00", "level": "INFO", "logger": "app.crawler.adapters.iguopin_jobs", "msg": "iguopin_jobs page_fetched nature=11bTac9 page=1 size=30 total=600", "request_id": "27b11987-b688-4349-8496-a0ba7b80e83c", "trace_id": "27b11987-b688-4349-8496-a0ba7b80e83c"}
+{"ts": "2026-02-16T12:01:00.154912+00:00", "level": "INFO", "logger": "httpx", "msg": "HTTP Request: POST https://gp-api.iguopin.com/api/jobs/v1/list \"HTTP/1.1 200 OK\"", "request_id": "27b11987-b688-4349-8496-a0ba7b80e83c", "trace_id": "27b11987-b688-4349-8496-a0ba7b80e83c"}
+{"ts": "2026-02-16T12:01:00.169250+00:00", "level": "INFO", "logger": "app.crawler.adapters.iguopin_jobs", "msg": "iguopin_jobs page_fetched nature=11bTac9 page=2 size=30 total=600", "request_id": "27b11987-b688-4349-8496-a0ba7b80e83c", "trace_id": "27b11987-b688-4349-8496-a0ba7b80e83c"}
+{"ts": "2026-02-16T12:01:00.520527+00:00", "level": "INFO", "logger": "httpx", "msg": "HTTP Request: POST https://gp-api.iguopin.com/api/jobs/v1/list \"HTTP/1.1 200 OK\"", "request_id": "27b11987-b688-4349-8496-a0ba7b80e83c", "trace_id": "27b11987-b688-4349-8496-a0ba7b80e83c"}
+{"ts": "2026-02-16T12:01:00.533251+00:00", "level": "INFO", "logger": "app.crawler.adapters.iguopin_jobs", "msg": "iguopin_jobs page_fetched nature=11bTac9 page=3 size=30 total=600", "request_id": "27b11987-b688-4349-8496-a0ba7b80e83c", "trace_id": "27b11987-b688-4349-8496-a0ba7b80e83c"}
+{"ts": "2026-02-16T12:01:00.855806+00:00", "level": "INFO", "logger": "httpx", "msg": "HTTP Request: POST https://gp-api.iguopin.com/api/jobs/v1/list \"HTTP/1.1 200 OK\"", "request_id": "27b11987-b688-4349-8496-a0ba7b80e83c", "trace_id": "27b11987-b688-4349-8496-a0ba7b80e83c"}
+{"ts": "2026-02-16T12:01:00.869838+00:00", "level": "INFO", "logger": "app.crawler.adapters.iguopin_jobs", "msg": "iguopin_jobs page_fetched nature=11bTac9 page=4 size=30 total=600", "request_id": "27b11987-b688-4349-8496-a0ba7b80e83c", "trace_id": "27b11987-b688-4349-8496-a0ba7b80e83c"}
+{"ts": "2026-02-16T12:01:01.201022+00:00", "level": "INFO", "logger": "httpx", "msg": "HTTP Request: POST https://gp-api.iguopin.com/api/jobs/v1/list \"HTTP/1.1 200 OK\"", "request_id": "27b11987-b688-4349-8496-a0ba7b80e83c", "trace_id": "27b11987-b688-4349-8496-a0ba7b80e83c"}
+{"ts": "2026-02-16T12:01:01.219649+00:00", "level": "INFO", "logger": "app.crawler.adapters.iguopin_jobs", "msg": "iguopin_jobs page_fetched nature=11bTac9 page=5 size=30 total=600", "request_id": "27b11987-b688-4349-8496-a0ba7b80e83c", "trace_id": "27b11987-b688-4349-8496-a0ba7b80e83c"}
+{"ts": "2026-02-16T12:01:01.535514+00:00", "level": "INFO", "logger": "httpx", "msg": "HTTP Request: POST https://gp-api.iguopin.com/api/jobs/v1/list \"HTTP/1.1 200 OK\"", "request_id": "27b11987-b688-4349-8496-a0ba7b80e83c", "trace_id": "27b11987-b688-4349-8496-a0ba7b80e83c"}
+{"ts": "2026-02-16T12:01:01.542441+00:00", "level": "INFO", "logger": "app.crawler.adapters.iguopin_jobs", "msg": "iguopin_jobs page_fetched nature=11bTac9 page=6 size=30 total=600", "request_id": "27b11987-b688-4349-8496-a0ba7b80e83c", "trace_id": "27b11987-b688-4349-8496-a0ba7b80e83c"}
+{"ts": "2026-02-16T12:01:01.852898+00:00", "level": "INFO", "logger": "httpx", "msg": "HTTP Request: POST https://gp-api.iguopin.com/api/jobs/v1/list \"HTTP/1.1 200 OK\"", "request_id": "27b11987-b688-4349-8496-a0ba7b80e83c", "trace_id": "27b11987-b688-4349-8496-a0ba7b80e83c"}
+{"ts": "2026-02-16T12:01:01.857993+00:00", "level": "INFO", "logger": "app.crawler.adapters.iguopin_jobs", "msg": "iguopin_jobs page_fetched nature=11bTac9 page=7 size=30 total=600", "request_id": "27b11987-b688-4349-8496-a0ba7b80e83c", "trace_id": "27b11987-b688-4349-8496-a0ba7b80e83c"}
+{"ts": "2026-02-16T12:01:02.189523+00:00", "level": "INFO", "logger": "httpx", "msg": "HTTP Request: POST https://gp-api.iguopin.com/api/jobs/v1/list \"HTTP/1.1 200 OK\"", "request_id": "27b11987-b688-4349-8496-a0ba7b80e83c", "trace_id": "27b11987-b688-4349-8496-a0ba7b80e83c"}
+{"ts": "2026-02-16T12:01:02.197709+00:00", "level": "INFO", "logger": "app.crawler.adapters.iguopin_jobs", "msg": "iguopin_jobs page_fetched nature=11bTac9 page=8 size=30 total=600", "request_id": "27b11987-b688-4349-8496-a0ba7b80e83c", "trace_id": "27b11987-b688-4349-8496-a0ba7b80e83c"}
+{"ts": "2026-02-16T12:01:04.808174+00:00", "level": "INFO", "logger": "httpx", "msg": "HTTP Request: POST https://gp-api.iguopin.com/api/jobs/v1/list \"HTTP/1.1 200 OK\"", "request_id": "27b11987-b688-4349-8496-a0ba7b80e83c", "trace_id": "27b11987-b688-4349-8496-a0ba7b80e83c"}
+{"ts": "2026-02-16T12:01:04.819798+00:00", "level": "INFO", "logger": "app.crawler.adapters.iguopin_jobs", "msg": "iguopin_jobs page_fetched nature=11bTac9 page=9 size=30 total=600", "request_id": "27b11987-b688-4349-8496-a0ba7b80e83c", "trace_id": "27b11987-b688-4349-8496-a0ba7b80e83c"}
+{"ts": "2026-02-16T12:01:05.148983+00:00", "level": "INFO", "logger": "httpx", "msg": "HTTP Request: POST https://gp-api.iguopin.com/api/jobs/v1/list \"HTTP/1.1 200 OK\"", "request_id": "27b11987-b688-4349-8496-a0ba7b80e83c", "trace_id": "27b11987-b688-4349-8496-a0ba7b80e83c"}
+{"ts": "2026-02-16T12:01:05.164745+00:00", "level": "INFO", "logger": "app.crawler.adapters.iguopin_jobs", "msg": "iguopin_jobs page_fetched nature=11bTac9 page=10 size=30 total=600", "request_id": "27b11987-b688-4349-8496-a0ba7b80e83c", "trace_id": "27b11987-b688-4349-8496-a0ba7b80e83c"}
+{"ts": "2026-02-16T12:01:05.498057+00:00", "level": "INFO", "logger": "httpx", "msg": "HTTP Request: POST https://gp-api.iguopin.com/api/jobs/v1/list \"HTTP/1.1 200 OK\"", "request_id": "27b11987-b688-4349-8496-a0ba7b80e83c", "trace_id": "27b11987-b688-4349-8496-a0ba7b80e83c"}
+{"ts": "2026-02-16T12:01:05.510895+00:00", "level": "INFO", "logger": "app.crawler.adapters.iguopin_jobs", "msg": "iguopin_jobs page_fetched nature=11bTac9 page=11 size=30 total=600", "request_id": "27b11987-b688-4349-8496-a0ba7b80e83c", "trace_id": "27b11987-b688-4349-8496-a0ba7b80e83c"}
+{"ts": "2026-02-16T12:01:05.826172+00:00", "level": "INFO", "logger": "httpx", "msg": "HTTP Request: POST https://gp-api.iguopin.com/api/jobs/v1/list \"HTTP/1.1 200 OK\"", "request_id": "27b11987-b688-4349-8496-a0ba7b80e83c", "trace_id": "27b11987-b688-4349-8496-a0ba7b80e83c"}
+{"ts": "2026-02-16T12:01:05.836510+00:00", "level": "INFO", "logger": "app.crawler.adapters.iguopin_jobs", "msg": "iguopin_jobs page_fetched nature=11bTac9 page=12 size=30 total=600", "request_id": "27b11987-b688-4349-8496-a0ba7b80e83c", "trace_id": "27b11987-b688-4349-8496-a0ba7b80e83c"}
+{"ts": "2026-02-16T12:01:06.151921+00:00", "level": "INFO", "logger": "httpx", "msg": "HTTP Request: POST https://gp-api.iguopin.com/api/jobs/v1/list \"HTTP/1.1 200 OK\"", "request_id": "27b11987-b688-4349-8496-a0ba7b80e83c", "trace_id": "27b11987-b688-4349-8496-a0ba7b80e83c"}
+{"ts": "2026-02-16T12:01:06.164850+00:00", "level": "INFO", "logger": "app.crawler.adapters.iguopin_jobs", "msg": "iguopin_jobs page_fetched nature=11bTac9 page=13 size=30 total=600", "request_id": "27b11987-b688-4349-8496-a0ba7b80e83c", "trace_id": "27b11987-b688-4349-8496-a0ba7b80e83c"}
+{"ts": "2026-02-16T12:01:06.496423+00:00", "level": "INFO", "logger": "httpx", "msg": "HTTP Request: POST https://gp-api.iguopin.com/api/jobs/v1/list \"HTTP/1.1 200 OK\"", "request_id": "27b11987-b688-4349-8496-a0ba7b80e83c", "trace_id": "27b11987-b688-4349-8496-a0ba7b80e83c"}
+{"ts": "2026-02-16T12:01:06.512443+00:00", "level": "INFO", "logger": "app.crawler.adapters.iguopin_jobs", "msg": "iguopin_jobs page_fetched nature=11bTac9 page=14 size=30 total=600", "request_id": "27b11987-b688-4349-8496-a0ba7b80e83c", "trace_id": "27b11987-b688-4349-8496-a0ba7b80e83c"}
+{"ts": "2026-02-16T12:01:06.853624+00:00", "level": "INFO", "logger": "httpx", "msg": "HTTP Request: POST https://gp-api.iguopin.com/api/jobs/v1/list \"HTTP/1.1 200 OK\"", "request_id": "27b11987-b688-4349-8496-a0ba7b80e83c", "trace_id": "27b11987-b688-4349-8496-a0ba7b80e83c"}
+{"ts": "2026-02-16T12:01:06.867954+00:00", "level": "INFO", "logger": "app.crawler.adapters.iguopin_jobs", "msg": "iguopin_jobs page_fetched nature=11bTac9 page=15 size=30 total=600", "request_id": "27b11987-b688-4349-8496-a0ba7b80e83c", "trace_id": "27b11987-b688-4349-8496-a0ba7b80e83c"}
+{"ts": "2026-02-16T12:01:07.202770+00:00", "level": "INFO", "logger": "httpx", "msg": "HTTP Request: POST https://gp-api.iguopin.com/api/jobs/v1/list \"HTTP/1.1 200 OK\"", "request_id": "27b11987-b688-4349-8496-a0ba7b80e83c", "trace_id": "27b11987-b688-4349-8496-a0ba7b80e83c"}
+{"ts": "2026-02-16T12:01:07.216434+00:00", "level": "INFO", "logger": "app.crawler.adapters.iguopin_jobs", "msg": "iguopin_jobs page_fetched nature=11bTac9 page=16 size=30 total=600", "request_id": "27b11987-b688-4349-8496-a0ba7b80e83c", "trace_id": "27b11987-b688-4349-8496-a0ba7b80e83c"}
+{"ts": "2026-02-16T12:01:07.555170+00:00", "level": "INFO", "logger": "httpx", "msg": "HTTP Request: POST https://gp-api.iguopin.com/api/jobs/v1/list \"HTTP/1.1 200 OK\"", "request_id": "27b11987-b688-4349-8496-a0ba7b80e83c", "trace_id": "27b11987-b688-4349-8496-a0ba7b80e83c"}
+{"ts": "2026-02-16T12:01:07.566518+00:00", "level": "INFO", "logger": "app.crawler.adapters.iguopin_jobs", "msg": "iguopin_jobs page_fetched nature=11bTac9 page=17 size=30 total=600", "request_id": "27b11987-b688-4349-8496-a0ba7b80e83c", "trace_id": "27b11987-b688-4349-8496-a0ba7b80e83c"}
+{"ts": "2026-02-16T12:01:07.894719+00:00", "level": "INFO", "logger": "httpx", "msg": "HTTP Request: POST https://gp-api.iguopin.com/api/jobs/v1/list \"HTTP/1.1 200 OK\"", "request_id": "27b11987-b688-4349-8496-a0ba7b80e83c", "trace_id": "27b11987-b688-4349-8496-a0ba7b80e83c"}
+{"ts": "2026-02-16T12:01:07.910523+00:00", "level": "INFO", "logger": "app.crawler.adapters.iguopin_jobs", "msg": "iguopin_jobs page_fetched nature=11bTac9 page=18 size=30 total=600", "request_id": "27b11987-b688-4349-8496-a0ba7b80e83c", "trace_id": "27b11987-b688-4349-8496-a0ba7b80e83c"}
+{"ts": "2026-02-16T12:01:08.243288+00:00", "level": "INFO", "logger": "httpx", "msg": "HTTP Request: POST https://gp-api.iguopin.com/api/jobs/v1/list \"HTTP/1.1 200 OK\"", "request_id": "27b11987-b688-4349-8496-a0ba7b80e83c", "trace_id": "27b11987-b688-4349-8496-a0ba7b80e83c"}
+{"ts": "2026-02-16T12:01:08.258586+00:00", "level": "INFO", "logger": "app.crawler.adapters.iguopin_jobs", "msg": "iguopin_jobs page_fetched nature=11bTac9 page=19 size=30 total=600", "request_id": "27b11987-b688-4349-8496-a0ba7b80e83c", "trace_id": "27b11987-b688-4349-8496-a0ba7b80e83c"}
+{"ts": "2026-02-16T12:01:08.582016+00:00", "level": "INFO", "logger": "httpx", "msg": "HTTP Request: POST https://gp-api.iguopin.com/api/jobs/v1/list \"HTTP/1.1 200 OK\"", "request_id": "27b11987-b688-4349-8496-a0ba7b80e83c", "trace_id": "27b11987-b688-4349-8496-a0ba7b80e83c"}
+{"ts": "2026-02-16T12:01:08.594044+00:00", "level": "INFO", "logger": "app.crawler.adapters.iguopin_jobs", "msg": "iguopin_jobs page_fetched nature=11bTac9 page=20 size=30 total=600", "request_id": "27b11987-b688-4349-8496-a0ba7b80e83c", "trace_id": "27b11987-b688-4349-8496-a0ba7b80e83c"}
+{"ts": "2026-02-16T12:01:14.638538+00:00", "level": "INFO", "logger": "app.crawler.adapters.iguopin_jobs", "msg": "iguopin_jobs crawl_summary {'source_code': 'iguopin_jobs', 'base_url': 'https://gp-api.iguopin.com', 'job_natures': ['113Fc6wc', '114BeBeq', '115xW5oQ', '11bTac9'], 'page_size': 30, 'max_pages': 60, 'max_items': 3000, 'trust_env': 0, 'proxy_enabled': 0, 'fetched_items': 600, 'normalized_items': 569, 'by_nature': [{'job_nature': '113Fc6wc', 'pages_fetched': 20, 'total_count_hint': 600, 'list_items_count': 600, 'unique_items_added': 600}, {'job_nature': '114BeBeq', 'pages_fetched': 20, 'total_count_hint': 600, 'list_items_count': 600, 'unique_items_added': 0}, {'job_nature': '115xW5oQ', 'pages_fetched': 20, 'total_count_hint': 600, 'list_items_count': 600, 'unique_items_added': 0}, {'job_nature': '11bTac9', 'pages_fetched': 20, 'total_count_hint': 600, 'list_items_count': 600, 'unique_items_added': 0}]}", "request_id": "27b11987-b688-4349-8496-a0ba7b80e83c", "trace_id": "27b11987-b688-4349-8496-a0ba7b80e83c"}
+INFO:     127.0.0.1:44636 - "POST /api/v1/crawler/runs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47536 - "GET /api/v1/jobs?page=1&page_size=2&source=iguopin_jobs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55842 - "OPTIONS /api/v1/jobs?page=4&page_size=20&sort_by=time&province=%E5%9B%9B%E5%B7%9D HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55842 - "GET /api/v1/jobs?page=4&page_size=20&sort_by=time&province=%E5%9B%9B%E5%B7%9D HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56631 - "OPTIONS /api/v1/jobs?page=3&page_size=20&sort_by=time&province=%E5%9B%9B%E5%B7%9D HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56631 - "GET /api/v1/jobs?page=3&page_size=20&sort_by=time&province=%E5%9B%9B%E5%B7%9D HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64531 - "OPTIONS /api/v1/campus-events?page=1&page_size=20&sort_by=time HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64531 - "GET /api/v1/campus-events?page=1&page_size=20&sort_by=time HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64531 - "OPTIONS /api/v1/campus-events?page=2&page_size=20&sort_by=time HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64531 - "GET /api/v1/campus-events?page=2&page_size=20&sort_by=time HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58182 - "OPTIONS /api/v1/campus-events?page=3&page_size=20&sort_by=time HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58182 - "GET /api/v1/campus-events?page=3&page_size=20&sort_by=time HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46272 - "GET /api/v1/campus-events/526 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55968 - "OPTIONS /api/v1/campus-events?page=2&page_size=20&sort_by=time HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55968 - "GET /api/v1/campus-events?page=2&page_size=20&sort_by=time HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55968 - "OPTIONS /api/v1/campus-events?page=4&page_size=20&sort_by=time HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55968 - "GET /api/v1/campus-events?page=4&page_size=20&sort_by=time HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65347 - "OPTIONS /api/v1/campus-events?page=1&page_size=20&sort_by=time HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65347 - "GET /api/v1/campus-events?page=1&page_size=20&sort_by=time HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57559 - "OPTIONS /api/v1/jobs?page=1&page_size=20&sort_by=time HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57559 - "GET /api/v1/jobs?page=1&page_size=20&sort_by=time HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57559 - "OPTIONS /api/v1/jobs?page=2&page_size=20&sort_by=time HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57559 - "GET /api/v1/jobs?page=2&page_size=20&sort_by=time HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47200 - "GET /api/v1/jobs/3621 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50481 - "OPTIONS /api/v1/jobs?page=1&page_size=20&sort_by=time&province=%E5%9B%9B%E5%B7%9D HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50481 - "OPTIONS /api/v1/jobs?page=2&page_size=20&sort_by=time&province=%E5%9B%9B%E5%B7%9D HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50481 - "GET /api/v1/jobs?page=1&page_size=20&sort_by=time&province=%E5%9B%9B%E5%B7%9D HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50481 - "GET /api/v1/jobs?page=2&page_size=20&sort_by=time&province=%E5%9B%9B%E5%B7%9D HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50481 - "OPTIONS /api/v1/campus-events?page=2&page_size=20&sort_by=time HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50481 - "GET /api/v1/campus-events?page=2&page_size=20&sort_by=time HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59972 - "GET /healthz HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59973 - "GET /api/v1/campus-events?page=1&page_size=20&city=%E6%B7%B1%E5%9C%B3&school=%E5%8D%97%E6%96%B9%E7%A7%91%E6%8A%80%E5%A4%A7%E5%AD%A6&company=vivo&sort_by=time HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59974 - "GET /api/v1/campus-events/stats/basic HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63439 - "OPTIONS /api/v1/campus-events?page=2&page_size=20&sort_by=time HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63439 - "GET /api/v1/campus-events?page=2&page_size=20&sort_by=time HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50467 - "GET /api/v1/campus-events?page=1&page_size=20&sort_by=time&city=%E6%B7%B1%E5%9C%B3&school=%E5%8D%97%E6%96%B9%E7%A7%91%E6%8A%80%E5%A4%A7%E5%AD%A6&company=vivo HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50468 - "GET /api/v1/campus-events/stats/basic HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58282 - "OPTIONS /api/v1/campus-events?page=1&page_size=20&sort_by=time HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58282 - "GET /api/v1/campus-events?page=1&page_size=20&sort_by=time HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58282 - "OPTIONS /api/v1/campus-events?page=2&page_size=20&sort_by=time HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58282 - "GET /api/v1/campus-events?page=2&page_size=20&sort_by=time HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58282 - "OPTIONS /api/v1/jobs?page=1&page_size=20&sort_by=time HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58282 - "GET /api/v1/jobs?page=1&page_size=20&sort_by=time HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58282 - "OPTIONS /api/v1/jobs?page=2&page_size=20&sort_by=time HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58282 - "GET /api/v1/jobs?page=2&page_size=20&sort_by=time HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50796 - "OPTIONS /api/v1/campus-events?page=1&page_size=20&sort_by=time&school=%E7%94%B5%E7%A7%91 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50796 - "OPTIONS /api/v1/campus-events?page=2&page_size=20&sort_by=time&school=%E7%94%B5%E7%A7%91 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50796 - "GET /api/v1/campus-events?page=1&page_size=20&sort_by=time&school=%E7%94%B5%E7%A7%91 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50796 - "GET /api/v1/campus-events?page=2&page_size=20&sort_by=time&school=%E7%94%B5%E7%A7%91 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55164 - "OPTIONS /api/v1/campus-events?page=1&page_size=20&sort_by=time&school=%E8%A5%BF%E5%8D%97 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55164 - "GET /api/v1/campus-events?page=1&page_size=20&sort_by=time&school=%E8%A5%BF%E5%8D%97 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45372 - "GET /api/v1/campus-events/647 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57430 - "OPTIONS /api/v1/orders?page=1&page_size=10 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57430 - "GET /api/v1/orders?page=1&page_size=10 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52706 - "OPTIONS /api/v1/jobs?page=2&page_size=20&sort_by=time HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54881 - "OPTIONS /api/v1/jobs?page=3&page_size=20&sort_by=time HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54881 - "GET /api/v1/jobs?page=3&page_size=20&sort_by=time HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52706 - "GET /api/v1/jobs?page=2&page_size=20&sort_by=time HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46444 - "GET /api/v1/jobs/93 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45678 - "GET /api/v1/jobs/3622 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59930 - "OPTIONS /api/v1/jobs?page=2&page_size=20&sort_by=time HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57389 - "OPTIONS /api/v1/jobs?page=3&page_size=20&sort_by=time HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59930 - "GET /api/v1/jobs?page=2&page_size=20&sort_by=time HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57389 - "GET /api/v1/jobs?page=3&page_size=20&sort_by=time HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45082 - "GET /api/v1/jobs/94 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48386 - "GET /api/v1/jobs/3671 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56725 - "OPTIONS /api/v1/jobs?page=4&page_size=20&sort_by=time HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56725 - "GET /api/v1/jobs?page=4&page_size=20&sort_by=time HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48704 - "GET /api/v1/jobs/3664 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50497 - "OPTIONS /api/v1/jobs?page=1&page_size=20&sort_by=time HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51623 - "OPTIONS /api/v1/jobs?page=2&page_size=20&sort_by=time HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51623 - "GET /api/v1/jobs?page=1&page_size=20&sort_by=time HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50497 - "GET /api/v1/jobs?page=2&page_size=20&sort_by=time HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47844 - "GET /api/v1/jobs/267905 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59776 - "OPTIONS /api/v1/stats/basic HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59776 - "OPTIONS /api/v1/campus-events/stats/basic HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59776 - "GET /api/v1/stats/basic HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59776 - "GET /api/v1/campus-events/stats/basic HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60600 - "OPTIONS /api/v1/stats/basic HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60600 - "GET /api/v1/stats/basic HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60600 - "OPTIONS /api/v1/campus-events?page=1&page_size=20&sort_by=time HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60600 - "GET /api/v1/campus-events?page=1&page_size=20&sort_by=time HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60600 - "OPTIONS /api/v1/campus-events?page=2&page_size=20&sort_by=time HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60600 - "GET /api/v1/campus-events?page=2&page_size=20&sort_by=time HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60600 - "OPTIONS /api/v1/jobs?page=1&page_size=20&sort_by=time HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53157 - "OPTIONS /api/v1/jobs?page=2&page_size=20&sort_by=time HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60600 - "GET /api/v1/jobs?page=1&page_size=20&sort_by=time HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53157 - "GET /api/v1/jobs?page=2&page_size=20&sort_by=time HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65447 - "OPTIONS /api/v1/jobs?page=1&page_size=20&sort_by=salary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51163 - "OPTIONS /api/v1/jobs?page=2&page_size=20&sort_by=salary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65447 - "GET /api/v1/jobs?page=2&page_size=20&sort_by=salary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51163 - "GET /api/v1/jobs?page=1&page_size=20&sort_by=salary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46562 - "GET /api/v1/jobs/164 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53795 - "OPTIONS /api/v1/jobs?page=1&page_size=20&sort_by=time HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53795 - "OPTIONS /api/v1/jobs?page=2&page_size=20&sort_by=time HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53795 - "GET /api/v1/jobs?page=1&page_size=20&sort_by=time HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53795 - "GET /api/v1/jobs?page=2&page_size=20&sort_by=time HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53795 - "OPTIONS /api/v1/jobs/267905 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53795 - "GET /api/v1/jobs/267905 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48572 - "GET /api/v1/jobs/3613 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64238 - "OPTIONS /api/v1/jobs?page=1&page_size=20&sort_by=time HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55943 - "OPTIONS /api/v1/jobs?page=2&page_size=20&sort_by=time HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64238 - "GET /api/v1/jobs?page=2&page_size=20&sort_by=time HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55943 - "GET /api/v1/jobs?page=1&page_size=20&sort_by=time HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59856 - "OPTIONS /api/v1/campus-events?page=1&page_size=20&sort_by=time HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59856 - "GET /api/v1/campus-events?page=1&page_size=20&sort_by=time HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59856 - "OPTIONS /api/v1/campus-events?page=2&page_size=20&sort_by=time HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59856 - "GET /api/v1/campus-events?page=2&page_size=20&sort_by=time HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45896 - "GET /api/v1/campus-events/697 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61837 - "OPTIONS /api/v1/orders?page=1&page_size=10 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61837 - "GET /api/v1/orders?page=1&page_size=10 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45134 - "GET /api/v1/campus-events/698 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51297 - "OPTIONS /api/v1/campus-events?page=1&page_size=20&sort_by=time HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62958 - "OPTIONS /api/v1/campus-events?page=2&page_size=20&sort_by=time HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51297 - "GET /api/v1/campus-events?page=1&page_size=20&sort_by=time HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62958 - "GET /api/v1/campus-events?page=2&page_size=20&sort_by=time HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46290 - "GET /api/v1/campus-events/2 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53056 - "OPTIONS /api/v1/orders?page=1&page_size=10 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53056 - "GET /api/v1/orders?page=1&page_size=10 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49319 - "OPTIONS /api/v1/orders?page=1&page_size=10&phone=19983456820 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49319 - "GET /api/v1/orders?page=1&page_size=10&phone=19983456820 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59017 - "OPTIONS /api/v1/jobs?page=1&page_size=20&sort_by=time HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59017 - "GET /api/v1/jobs?page=1&page_size=20&sort_by=time HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59017 - "OPTIONS /api/v1/jobs?page=2&page_size=20&sort_by=time HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59017 - "GET /api/v1/jobs?page=2&page_size=20&sort_by=time HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44642 - "GET /api/v1/jobs/89 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50368 - "OPTIONS /api/v1/jobs?page=1&page_size=20&sort_by=time HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50363 - "OPTIONS /api/v1/jobs?page=2&page_size=20&sort_by=time HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50363 - "GET /api/v1/jobs?page=1&page_size=20&sort_by=time HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50368 - "GET /api/v1/jobs?page=2&page_size=20&sort_by=time HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50368 - "OPTIONS /api/v1/jobs?page=3&page_size=20&sort_by=time HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50368 - "GET /api/v1/jobs?page=3&page_size=20&sort_by=time HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62074 - "OPTIONS /api/v1/jobs?page=1&page_size=20&sort_by=time&keyword=backend HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62074 - "OPTIONS /api/v1/jobs?page=2&page_size=20&sort_by=time&keyword=backend HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62074 - "GET /api/v1/jobs?page=1&page_size=20&sort_by=time&keyword=backend HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62074 - "GET /api/v1/jobs?page=2&page_size=20&sort_by=time&keyword=backend HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48646 - "GET /api/v1/jobs/99 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49955 - "OPTIONS /api/v1/jobs?page=1&page_size=6&sort_by=time HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49955 - "GET /api/v1/jobs?page=1&page_size=6&sort_by=time HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49955 - "OPTIONS /api/v1/jobs?page=2&page_size=6&sort_by=time HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49955 - "GET /api/v1/jobs?page=2&page_size=6&sort_by=time HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49955 - "OPTIONS /api/v1/orders?page=1&page_size=10 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49955 - "GET /api/v1/orders?page=1&page_size=10 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49955 - "OPTIONS /api/v1/campus-events?page=1&page_size=20&sort_by=time HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62243 - "OPTIONS /api/v1/campus-events?page=2&page_size=20&sort_by=time HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49955 - "GET /api/v1/campus-events?page=2&page_size=20&sort_by=time HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62243 - "GET /api/v1/campus-events?page=1&page_size=20&sort_by=time HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50363 - "OPTIONS /api/v1/jobs?page=1&page_size=20&sort_by=time HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58982 - "OPTIONS /api/v1/jobs?page=2&page_size=20&sort_by=time HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58982 - "GET /api/v1/jobs?page=1&page_size=20&sort_by=time HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50363 - "GET /api/v1/jobs?page=2&page_size=20&sort_by=time HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62397 - "OPTIONS /api/v1/jobs/89 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62397 - "GET /api/v1/jobs/89 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46798 - "GET /api/v1/jobs/3674 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51340 - "OPTIONS /api/v1/jobs?page=1&page_size=20&sort_by=time&education=unknown HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54214 - "OPTIONS /api/v1/jobs?page=2&page_size=20&sort_by=time&education=unknown HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54214 - "GET /api/v1/jobs?page=1&page_size=20&sort_by=time&education=unknown HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51340 - "GET /api/v1/jobs?page=2&page_size=20&sort_by=time&education=unknown HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53593 - "OPTIONS /api/v1/jobs?page=1&page_size=20&sort_by=relevance&education=unknown HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53593 - "OPTIONS /api/v1/jobs?page=2&page_size=20&sort_by=relevance&education=unknown HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53593 - "GET /api/v1/jobs?page=1&page_size=20&sort_by=relevance&education=unknown HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53593 - "GET /api/v1/jobs?page=2&page_size=20&sort_by=relevance&education=unknown HTTP/1.1" 200 OK

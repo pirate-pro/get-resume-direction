@@ -1,7 +1,6 @@
-from dataclasses import asdict
 from decimal import Decimal
 
-from sqlalchemy import func, or_, select
+from sqlalchemy import func, or_, select, update
 from sqlalchemy.dialects.postgresql import insert
 from sqlalchemy.ext.asyncio import AsyncSession
 
@@ -33,9 +32,6 @@ class JobDAO:
                 district=normalized.district,
             )
 
-            payload = asdict(normalized)
-            payload.pop("skills", None)
-
             search_text = " ".join(
                 [
                     normalized.title,
@@ -45,79 +41,156 @@ class JobDAO:
                 ]
             )
 
-            stmt = insert(Job).values(
-                source_id=source_id,
-                external_job_id=normalized.external_job_id,
-                source_url=normalized.source_url,
-                dedup_fingerprint=normalized.dedup_fingerprint,
-                global_fingerprint=normalized.global_fingerprint,
-                company_id=company.id,
-                location_id=location.id,
-                title=normalized.title,
-                job_category=normalized.job_category,
-                seniority=normalized.seniority,
-                department=normalized.department,
-                job_type=normalized.job_type,
-                remote_type=normalized.remote_type,
-                salary_min=normalized.salary_min,
-                salary_max=normalized.salary_max,
-                salary_currency=normalized.salary_currency,
-                salary_period=normalized.salary_period,
-                education_requirement=normalized.education_requirement,
-                experience_min_months=normalized.experience_min_months,
-                experience_max_months=normalized.experience_max_months,
-                responsibilities=normalized.responsibilities,
-                qualifications=normalized.qualifications,
-                benefits_json=normalized.benefits,
-                tags_json=normalized.tags,
-                published_at=normalized.published_at,
-                updated_at_source=normalized.updated_at_source,
-                first_crawled_at=normalized.first_crawled_at,
-                last_crawled_at=normalized.last_crawled_at,
-                search_vector=func.to_tsvector("simple", search_text),
-                status="active",
+            existing_stmt = select(Job).where(
+                Job.source_id == source_id,
+                Job.external_job_id == normalized.external_job_id,
             )
-            stmt = stmt.on_conflict_do_update(
-                index_elements=[Job.source_id, Job.external_job_id],
-                set_={
-                    "source_url": normalized.source_url,
-                    "company_id": company.id,
-                    "location_id": location.id,
-                    "title": normalized.title,
-                    "job_category": normalized.job_category,
-                    "seniority": normalized.seniority,
-                    "department": normalized.department,
-                    "job_type": normalized.job_type,
-                    "remote_type": normalized.remote_type,
-                    "salary_min": normalized.salary_min,
-                    "salary_max": normalized.salary_max,
-                    "salary_currency": normalized.salary_currency,
-                    "salary_period": normalized.salary_period,
-                    "education_requirement": normalized.education_requirement,
-                    "experience_min_months": normalized.experience_min_months,
-                    "experience_max_months": normalized.experience_max_months,
-                    "responsibilities": normalized.responsibilities,
-                    "qualifications": normalized.qualifications,
-                    "benefits_json": normalized.benefits,
-                    "tags_json": normalized.tags,
-                    "updated_at_source": normalized.updated_at_source,
-                    "last_crawled_at": normalized.last_crawled_at,
-                    "search_vector": func.to_tsvector("simple", search_text),
-                    "status": "active",
-                },
-            ).returning(Job.id)
+            existing_external = (await session.execute(existing_stmt)).scalar_one_or_none()
+            existing_fingerprint = None
+            if existing_external is None:
+                existing_fingerprint_stmt = select(Job).where(
+                    Job.source_id == source_id,
+                    Job.dedup_fingerprint == normalized.dedup_fingerprint,
+                )
+                existing_fingerprint = (await session.execute(existing_fingerprint_stmt)).scalar_one_or_none()
 
-            result = await session.execute(stmt)
-            job_id = result.scalar_one()
-            exists_stmt = select(Job.id).where(
-                Job.id == job_id,
-                Job.first_crawled_at == normalized.first_crawled_at,
-            )
-            exists_result = await session.execute(exists_stmt)
-            if exists_result.scalar_one_or_none() is None:
-                updated_count += 1
-            else:
+            existing = existing_external or existing_fingerprint
+            if existing is None:
                 inserted_count += 1
+            else:
+                # Count as "updated" only when core business fields changed (exclude crawl timestamps).
+                has_changes = any(
+                    [
+                        existing.source_url != normalized.source_url,
+                        existing.dedup_fingerprint != normalized.dedup_fingerprint,
+                        existing.global_fingerprint != normalized.global_fingerprint,
+                        existing.company_id != company.id,
+                        existing.location_id != location.id,
+                        existing.title != normalized.title,
+                        existing.job_category != normalized.job_category,
+                        existing.seniority != normalized.seniority,
+                        existing.department != normalized.department,
+                        existing.job_type != normalized.job_type,
+                        existing.remote_type != normalized.remote_type,
+                        existing.salary_min != normalized.salary_min,
+                        existing.salary_max != normalized.salary_max,
+                        existing.salary_currency != normalized.salary_currency,
+                        existing.salary_period != normalized.salary_period,
+                        existing.education_requirement != normalized.education_requirement,
+                        existing.experience_min_months != normalized.experience_min_months,
+                        existing.experience_max_months != normalized.experience_max_months,
+                        existing.responsibilities != normalized.responsibilities,
+                        existing.qualifications != normalized.qualifications,
+                        (existing.benefits_json or []) != (normalized.benefits or []),
+                        (existing.tags_json or []) != (normalized.tags or []),
+                        existing.updated_at_source != normalized.updated_at_source,
+                        existing.status != "active",
+                    ]
+                )
+                if has_changes:
+                    updated_count += 1
+
+            if existing_external is None and existing_fingerprint is not None:
+                # A different external ID maps to the same business fingerprint. Keep one canonical row and update it.
+                update_stmt = (
+                    update(Job)
+                    .where(Job.id == existing_fingerprint.id)
+                    .values(
+                        source_url=normalized.source_url,
+                        dedup_fingerprint=normalized.dedup_fingerprint,
+                        global_fingerprint=normalized.global_fingerprint,
+                        company_id=company.id,
+                        location_id=location.id,
+                        title=normalized.title,
+                        job_category=normalized.job_category,
+                        seniority=normalized.seniority,
+                        department=normalized.department,
+                        job_type=normalized.job_type,
+                        remote_type=normalized.remote_type,
+                        salary_min=normalized.salary_min,
+                        salary_max=normalized.salary_max,
+                        salary_currency=normalized.salary_currency,
+                        salary_period=normalized.salary_period,
+                        education_requirement=normalized.education_requirement,
+                        experience_min_months=normalized.experience_min_months,
+                        experience_max_months=normalized.experience_max_months,
+                        responsibilities=normalized.responsibilities,
+                        qualifications=normalized.qualifications,
+                        benefits_json=normalized.benefits,
+                        tags_json=normalized.tags,
+                        updated_at_source=normalized.updated_at_source,
+                        last_crawled_at=normalized.last_crawled_at,
+                        search_vector=func.to_tsvector("simple", search_text),
+                        status="active",
+                    )
+                )
+                await session.execute(update_stmt)
+            else:
+                stmt = insert(Job).values(
+                    source_id=source_id,
+                    external_job_id=normalized.external_job_id,
+                    source_url=normalized.source_url,
+                    dedup_fingerprint=normalized.dedup_fingerprint,
+                    global_fingerprint=normalized.global_fingerprint,
+                    company_id=company.id,
+                    location_id=location.id,
+                    title=normalized.title,
+                    job_category=normalized.job_category,
+                    seniority=normalized.seniority,
+                    department=normalized.department,
+                    job_type=normalized.job_type,
+                    remote_type=normalized.remote_type,
+                    salary_min=normalized.salary_min,
+                    salary_max=normalized.salary_max,
+                    salary_currency=normalized.salary_currency,
+                    salary_period=normalized.salary_period,
+                    education_requirement=normalized.education_requirement,
+                    experience_min_months=normalized.experience_min_months,
+                    experience_max_months=normalized.experience_max_months,
+                    responsibilities=normalized.responsibilities,
+                    qualifications=normalized.qualifications,
+                    benefits_json=normalized.benefits,
+                    tags_json=normalized.tags,
+                    published_at=normalized.published_at,
+                    updated_at_source=normalized.updated_at_source,
+                    first_crawled_at=normalized.first_crawled_at,
+                    last_crawled_at=normalized.last_crawled_at,
+                    search_vector=func.to_tsvector("simple", search_text),
+                    status="active",
+                )
+                stmt = stmt.on_conflict_do_update(
+                    index_elements=[Job.source_id, Job.external_job_id],
+                    set_={
+                        "source_url": normalized.source_url,
+                        "dedup_fingerprint": normalized.dedup_fingerprint,
+                        "global_fingerprint": normalized.global_fingerprint,
+                        "company_id": company.id,
+                        "location_id": location.id,
+                        "title": normalized.title,
+                        "job_category": normalized.job_category,
+                        "seniority": normalized.seniority,
+                        "department": normalized.department,
+                        "job_type": normalized.job_type,
+                        "remote_type": normalized.remote_type,
+                        "salary_min": normalized.salary_min,
+                        "salary_max": normalized.salary_max,
+                        "salary_currency": normalized.salary_currency,
+                        "salary_period": normalized.salary_period,
+                        "education_requirement": normalized.education_requirement,
+                        "experience_min_months": normalized.experience_min_months,
+                        "experience_max_months": normalized.experience_max_months,
+                        "responsibilities": normalized.responsibilities,
+                        "qualifications": normalized.qualifications,
+                        "benefits_json": normalized.benefits,
+                        "tags_json": normalized.tags,
+                        "updated_at_source": normalized.updated_at_source,
+                        "last_crawled_at": normalized.last_crawled_at,
+                        "search_vector": func.to_tsvector("simple", search_text),
+                        "status": "active",
+                    },
+                )
+
+                await session.execute(stmt)
 
         await session.flush()
         return inserted_count, updated_count
@@ -289,3 +362,7 @@ class JobDAO:
             "by_city": by_city,
             "by_category": by_category,
         }
+
+    async def exists_by_id(self, session: AsyncSession, job_id: int) -> bool:
+        stmt = select(Job.id).where(Job.id == job_id)
+        return (await session.execute(stmt)).scalar_one_or_none() is not None

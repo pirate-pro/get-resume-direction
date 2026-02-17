@@ -11,16 +11,16 @@ const bodyFont = Manrope({ subsets: ["latin"], variable: "--font-body" });
 
 export const metadata: Metadata = {
   title: {
-    default: "China Job Aggregation Platform",
-    template: "%s | Job Aggregation Platform"
+    default: "职位聚合平台",
+    template: "%s | 职位聚合平台"
   },
-  description: "Campus and experienced hiring aggregation with searchable structured job data.",
+  description: "聚合职位与校园活动，支持筛选检索、原站跳转与线下代投订单。",
   metadataBase: new URL("https://example.com")
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>): JSX.Element {
   return (
-    <html lang="en" className={`${headingFont.variable} ${bodyFont.variable}`}>
+    <html lang="zh-CN" className={`${headingFont.variable} ${bodyFont.variable}`}>
       <body className="font-[var(--font-body)] antialiased">
         <Providers>
           <ErrorBoundary>

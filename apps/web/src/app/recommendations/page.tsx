@@ -4,9 +4,9 @@ export default function RecommendationsPage(): JSX.Element {
   return (
     <div className="space-y-4">
       <header>
-        <h1 className="text-2xl font-black text-brand-700">Recommendations (Phase 2 Placeholder)</h1>
+        <h1 className="text-2xl font-black text-brand-700">智能推荐（阶段二占位）</h1>
         <p className="text-sm text-slate-600">
-          This route defines expected data shapes and recommendation explanation area for future backend integration.
+          该页面用于定义推荐结果数据结构与推荐理由展示区，后续对接后端智能推荐。
         </p>
       </header>
 
@@ -21,11 +21,11 @@ export default function RecommendationsPage(): JSX.Element {
                 </p>
               </div>
               <span className="rounded-md bg-brand-100 px-2 py-1 text-xs font-semibold text-brand-700">
-                score {Math.round(item.score * 100)}
+                分数 {Math.round(item.score * 100)}
               </span>
             </div>
             <div className="mt-3 rounded-md border border-brand-100 bg-brand-50 p-3">
-              <h3 className="text-sm font-semibold">Recommendation reason</h3>
+              <h3 className="text-sm font-semibold">推荐理由</h3>
               <p className="mt-1 text-sm text-slate-700">{item.reason}</p>
             </div>
           </article>

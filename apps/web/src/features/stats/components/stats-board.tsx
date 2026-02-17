@@ -3,6 +3,7 @@
 import { EmptyState } from "@/components/states/empty-state";
 import { ErrorState } from "@/components/states/error-state";
 import { LoadingState } from "@/components/states/loading-state";
+import { useEventStats } from "@/features/events/hooks/use-event-stats";
 
 import { useStats } from "@/features/jobs/hooks/use-stats";
 
@@ -23,33 +24,50 @@ function listBlock(title: string, rows: Array<{ name: string; value: number }>):
 }
 
 export function StatsBoard(): JSX.Element {
-  const query = useStats();
+  const jobsQuery = useStats();
+  const eventsQuery = useEventStats();
 
-  if (query.isLoading) {
-    return <LoadingState label="Loading stats..." />;
+  if (jobsQuery.isLoading || eventsQuery.isLoading) {
+    return <LoadingState label="统计数据加载中..." />;
   }
 
-  if (query.isError) {
-    return <ErrorState message={query.error.message} retry={() => query.refetch()} />;
+  if (jobsQuery.isError) {
+    return <ErrorState message={jobsQuery.error.message} retry={() => jobsQuery.refetch()} />;
   }
 
-  if (!query.data) {
-    return <EmptyState title="No stats yet" description="Run crawler jobs to generate stats." />;
+  if (eventsQuery.isError) {
+    return <ErrorState message={eventsQuery.error.message} retry={() => eventsQuery.refetch()} />;
+  }
+
+  if (!jobsQuery.data || !eventsQuery.data) {
+    return <EmptyState title="暂无统计数据" description="请先运行爬取任务生成统计信息。" />;
   }
 
   return (
     <div className="grid gap-4 lg:grid-cols-3">
       {listBlock(
-        "By Source",
-        query.data.by_source.map((item) => ({ name: item.source, value: item.count }))
+        "职位按来源统计",
+        jobsQuery.data.by_source.map((item) => ({ name: item.source, value: item.count }))
       )}
       {listBlock(
-        "By City",
-        query.data.by_city.map((item) => ({ name: item.city ?? "unknown", value: item.count }))
+        "职位按城市统计",
+        jobsQuery.data.by_city.map((item) => ({ name: item.city ?? "未知", value: item.count }))
       )}
       {listBlock(
-        "By Category",
-        query.data.by_category.map((item) => ({ name: item.category, value: item.count }))
+        "职位按类别统计",
+        jobsQuery.data.by_category.map((item) => ({ name: item.category, value: item.count }))
+      )}
+      {listBlock(
+        "活动按来源统计",
+        eventsQuery.data.by_source.map((item) => ({ name: item.source, value: item.count }))
+      )}
+      {listBlock(
+        "活动按城市统计",
+        eventsQuery.data.by_city.map((item) => ({ name: item.city, value: item.count }))
+      )}
+      {listBlock(
+        "活动按学校统计",
+        eventsQuery.data.by_school.map((item) => ({ name: item.school, value: item.count }))
       )}
     </div>
   );

@@ -6,6 +6,9 @@ from app.utils.normalizers import normalize_job
 class DemoUniversityAdapter(SiteAdapter):
     source_code = "demo_university"
 
+    def __init__(self, config: dict | None = None) -> None:
+        super().__init__(config=config)
+
     async def fetch_list(self) -> list[dict]:
         return [{"notice_id": "u-5001", "url": "https://career.univ.example/notice/u-5001"}]
 

@@ -17,8 +17,8 @@ depends_on = None
 
 
 def upgrade() -> None:
-    source_type_enum = sa.Enum("platform", "university", name="sourcetype")
-    job_type_enum = sa.Enum(
+    source_type_enum = postgresql.ENUM("platform", "university", name="sourcetype", create_type=False)
+    job_type_enum = postgresql.ENUM(
         "full_time",
         "intern",
         "campus",
@@ -26,10 +26,17 @@ def upgrade() -> None:
         "experienced",
         "unknown",
         name="jobtype",
+        create_type=False,
     )
-    remote_type_enum = sa.Enum("onsite", "hybrid", "remote", "unknown", name="remotetype")
-    edu_enum = sa.Enum("unknown", "college", "bachelor", "master", "phd", name="educationlevel")
-    run_status_enum = sa.Enum("running", "success", "failed", "paused", name="crawlrunstatus")
+    remote_type_enum = postgresql.ENUM(
+        "onsite", "hybrid", "remote", "unknown", name="remotetype", create_type=False
+    )
+    edu_enum = postgresql.ENUM(
+        "unknown", "college", "bachelor", "master", "phd", name="educationlevel", create_type=False
+    )
+    run_status_enum = postgresql.ENUM(
+        "running", "success", "failed", "paused", name="crawlrunstatus", create_type=False
+    )
 
     bind = op.get_bind()
     source_type_enum.create(bind, checkfirst=True)

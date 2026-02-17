@@ -6,7 +6,7 @@ export function cn(...inputs: ClassValue[]): string {
 
 export function formatDate(iso?: string | null): string {
   if (!iso) {
-    return "Unknown";
+    return "未知";
   }
   return new Date(iso).toLocaleDateString("zh-CN", {
     year: "numeric",
@@ -22,9 +22,9 @@ export function formatSalary(
   period = "month"
 ): string {
   if (!min && !max) {
-    return "Salary negotiable";
+    return "薪资面议";
   }
   const unit = currency === "CNY" ? "¥" : `${currency} `;
-  const suffix = period === "year" ? "/year" : "/month";
+  const suffix = period === "year" ? "/年" : "/月";
   return `${unit}${(min ?? 0).toLocaleString()} - ${(max ?? 0).toLocaleString()}${suffix}`;
 }

@@ -9,11 +9,13 @@ from sqlalchemy.ext.asyncio import async_engine_from_config
 from app.core.config import get_settings
 from app.models.base import Base
 import app.models.company  # noqa: F401
+import app.models.campus_event  # noqa: F401
 import app.models.crawl_run  # noqa: F401
 import app.models.job  # noqa: F401
 import app.models.job_version  # noqa: F401
 import app.models.location  # noqa: F401
 import app.models.resume  # noqa: F401
+import app.models.service_order  # noqa: F401
 import app.models.skill  # noqa: F401
 import app.models.source  # noqa: F401
 import app.models.user  # noqa: F401

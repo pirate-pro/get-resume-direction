@@ -6,6 +6,9 @@ from app.crawler.types import NormalizedJob, RawJob
 class SiteAdapter(ABC):
     source_code: str
 
+    def __init__(self, config: dict | None = None) -> None:
+        self.config = config or {}
+
     @abstractmethod
     async def fetch_list(self) -> list[dict]:
         raise NotImplementedError

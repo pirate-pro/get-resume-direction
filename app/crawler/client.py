@@ -18,6 +18,7 @@ class CrawlerClient:
         headers: dict[str, str] | None = None,
         cookies: dict[str, str] | None = None,
         proxy: str | None = None,
+        trust_env: bool = False,
     ) -> None:
         self.timeout_seconds = timeout_seconds
         self.retry_count = retry_count
@@ -25,7 +26,13 @@ class CrawlerClient:
         self.jitter_ms = jitter_ms
         self.allow_paths = allow_paths or []
         self.deny_paths = deny_paths or []
-        self.client = httpx.AsyncClient(timeout=timeout_seconds, headers=headers, cookies=cookies, proxy=proxy)
+        self.client = httpx.AsyncClient(
+            timeout=timeout_seconds,
+            headers=headers,
+            cookies=cookies,
+            proxy=proxy,
+            trust_env=trust_env,
+        )
 
     def _allowed(self, url: str) -> bool:
         path = urlparse(url).path

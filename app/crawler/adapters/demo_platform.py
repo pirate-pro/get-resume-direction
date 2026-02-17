@@ -6,6 +6,9 @@ from app.utils.normalizers import normalize_job
 class DemoPlatformAdapter(SiteAdapter):
     source_code = "demo_platform"
 
+    def __init__(self, config: dict | None = None) -> None:
+        super().__init__(config=config)
+
     async def fetch_list(self) -> list[dict]:
         return [
             {"job_id": "p-1001", "url": "https://platform.example/jobs/p-1001"},

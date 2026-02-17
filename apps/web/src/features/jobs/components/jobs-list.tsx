@@ -37,7 +37,7 @@ export function JobsListSection(): JSX.Element {
     <section className="space-y-4">
       <JobsFilterForm initial={queryParams} onApply={pushQuery} />
 
-      {query.isLoading ? <LoadingState label="Loading jobs..." /> : null}
+      {query.isLoading ? <LoadingState label="职位加载中..." /> : null}
       {query.isError ? (
         <ErrorState message={query.error.message} retry={() => query.refetch()} />
       ) : null}
@@ -45,7 +45,7 @@ export function JobsListSection(): JSX.Element {
       {!query.isLoading && !query.isError && query.data ? (
         <>
           {query.data.items.length === 0 ? (
-            <EmptyState title="No jobs found" description="Try adjusting filters or keyword." />
+            <EmptyState title="暂无匹配职位" description="请尝试调整筛选条件或关键词。" />
           ) : (
             <div className="grid gap-3">
               {query.data.items.map((job) => (
@@ -56,15 +56,15 @@ export function JobsListSection(): JSX.Element {
                         {job.title}
                       </Link>
                       <p className="text-sm text-slate-600">
-                        {job.company_name} · {job.city || "Unknown city"}
+                        {job.company_name} · {job.city || "未知城市"}
                       </p>
                       <p className="mt-1 text-sm text-slate-700">
                         {formatSalary(job.salary_min, job.salary_max, job.salary_currency || "CNY", job.salary_period || "month")}
                       </p>
                     </div>
                     <div className="text-right text-xs text-slate-500">
-                      <p>Source: {job.source_code}</p>
-                      <p>Published: {formatDate(job.published_at)}</p>
+                      <p>来源: {job.source_code}</p>
+                      <p>发布时间: {formatDate(job.published_at)}</p>
                     </div>
                   </div>
                 </article>

@@ -43,7 +43,7 @@ export async function httpGet<T>(path: string, params?: Record<string, string | 
     const json = (await response.json()) as ApiResponse<T>;
 
     if (!response.ok || json.code !== 0) {
-      throw new ApiError(json.message || "Request failed", response.status, json.code, json.data);
+      throw new ApiError(json.message || "请求失败", response.status, json.code, json.data);
     }
 
     return json.data;
@@ -53,10 +53,47 @@ export async function httpGet<T>(path: string, params?: Record<string, string | 
     }
 
     throw new ApiError(
-      error instanceof Error ? error.message : "Network error",
+      error instanceof Error ? error.message : "网络异常",
       500,
       19999
     );
+  } finally {
+    clearTimeout(timeout);
+  }
+}
+
+export async function httpPost<T, B extends object>(
+  path: string,
+  body: B
+): Promise<T> {
+  const controller = new AbortController();
+  const timeout = setTimeout(() => controller.abort(), REQUEST_TIMEOUT_MS);
+
+  const baseUrl = getApiBaseUrl().replace(/\/$/, "");
+  const url = `${baseUrl}${path}`;
+
+  try {
+    const response = await fetch(url, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(body),
+      signal: controller.signal
+    });
+
+    const json = (await response.json()) as ApiResponse<T>;
+
+    if (!response.ok || json.code !== 0) {
+      throw new ApiError(json.message || "请求失败", response.status, json.code, json.data);
+    }
+
+    return json.data;
+  } catch (error) {
+    if (error instanceof ApiError) {
+      throw error;
+    }
+    throw new ApiError(error instanceof Error ? error.message : "网络异常", 500, 19999);
   } finally {
     clearTimeout(timeout);
   }

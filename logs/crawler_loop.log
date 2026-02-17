@@ -1,0 +1,739 @@
+{"message": "crawler loop started", "sources": ["remoteok_real", "yingjiesheng_xjh"], "min_free_ratio": 0.35, "interval_seconds": 30, "idle_rounds_to_stop": 20, "max_rounds": null}
+yingjiesheng detail crawl failed
+Traceback (most recent call last):
+  File "/home/ubunt/get-resume-direction/app/crawler/adapters/yingjiesheng_xjh.py", line 70, in crawl
+    detail_html = await self._fetch_text(detail_url)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubunt/get-resume-direction/app/crawler/adapters/yingjiesheng_xjh.py", line 181, in _fetch_text
+    response.raise_for_status()
+  File "/home/ubunt/get-resume-direction/.venv/lib/python3.12/site-packages/httpx/_models.py", line 829, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Server error '502 Bad Gateway' for url 'https://my.yingjiesheng.com/xjh-006-229-960.html'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/502
+yingjiesheng detail crawl failed
+Traceback (most recent call last):
+  File "/home/ubunt/get-resume-direction/app/crawler/adapters/yingjiesheng_xjh.py", line 70, in crawl
+    detail_html = await self._fetch_text(detail_url)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubunt/get-resume-direction/app/crawler/adapters/yingjiesheng_xjh.py", line 181, in _fetch_text
+    response.raise_for_status()
+  File "/home/ubunt/get-resume-direction/.venv/lib/python3.12/site-packages/httpx/_models.py", line 829, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Server error '502 Bad Gateway' for url 'https://my.yingjiesheng.com/xjh-006-229-368.html'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/502
+yingjiesheng detail crawl failed
+Traceback (most recent call last):
+  File "/home/ubunt/get-resume-direction/app/crawler/adapters/yingjiesheng_xjh.py", line 70, in crawl
+    detail_html = await self._fetch_text(detail_url)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubunt/get-resume-direction/app/crawler/adapters/yingjiesheng_xjh.py", line 181, in _fetch_text
+    response.raise_for_status()
+  File "/home/ubunt/get-resume-direction/.venv/lib/python3.12/site-packages/httpx/_models.py", line 829, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Server error '502 Bad Gateway' for url 'https://my.yingjiesheng.com/xjh-006-229-038.html'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/502
+yingjiesheng detail crawl failed
+Traceback (most recent call last):
+  File "/home/ubunt/get-resume-direction/app/crawler/adapters/yingjiesheng_xjh.py", line 70, in crawl
+    detail_html = await self._fetch_text(detail_url)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubunt/get-resume-direction/app/crawler/adapters/yingjiesheng_xjh.py", line 181, in _fetch_text
+    response.raise_for_status()
+  File "/home/ubunt/get-resume-direction/.venv/lib/python3.12/site-packages/httpx/_models.py", line 829, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Server error '502 Bad Gateway' for url 'https://my.yingjiesheng.com/xjh-006-229-794.html'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/502
+yingjiesheng detail crawl failed
+Traceback (most recent call last):
+  File "/home/ubunt/get-resume-direction/app/crawler/adapters/yingjiesheng_xjh.py", line 70, in crawl
+    detail_html = await self._fetch_text(detail_url)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubunt/get-resume-direction/app/crawler/adapters/yingjiesheng_xjh.py", line 181, in _fetch_text
+    response.raise_for_status()
+  File "/home/ubunt/get-resume-direction/.venv/lib/python3.12/site-packages/httpx/_models.py", line 829, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Server error '502 Bad Gateway' for url 'https://my.yingjiesheng.com/xjh-006-229-574.html'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/502
+yingjiesheng detail crawl failed
+Traceback (most recent call last):
+  File "/home/ubunt/get-resume-direction/app/crawler/adapters/yingjiesheng_xjh.py", line 70, in crawl
+    detail_html = await self._fetch_text(detail_url)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubunt/get-resume-direction/app/crawler/adapters/yingjiesheng_xjh.py", line 181, in _fetch_text
+    response.raise_for_status()
+  File "/home/ubunt/get-resume-direction/.venv/lib/python3.12/site-packages/httpx/_models.py", line 829, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Server error '502 Bad Gateway' for url 'https://my.yingjiesheng.com/xjh-006-229-701.html'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/502
+yingjiesheng detail crawl failed
+Traceback (most recent call last):
+  File "/home/ubunt/get-resume-direction/app/crawler/adapters/yingjiesheng_xjh.py", line 70, in crawl
+    detail_html = await self._fetch_text(detail_url)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubunt/get-resume-direction/app/crawler/adapters/yingjiesheng_xjh.py", line 181, in _fetch_text
+    response.raise_for_status()
+  File "/home/ubunt/get-resume-direction/.venv/lib/python3.12/site-packages/httpx/_models.py", line 829, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Server error '502 Bad Gateway' for url 'https://my.yingjiesheng.com/xjh-006-229-069.html'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/502
+yingjiesheng detail crawl failed
+Traceback (most recent call last):
+  File "/home/ubunt/get-resume-direction/app/crawler/adapters/yingjiesheng_xjh.py", line 70, in crawl
+    detail_html = await self._fetch_text(detail_url)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubunt/get-resume-direction/app/crawler/adapters/yingjiesheng_xjh.py", line 181, in _fetch_text
+    response.raise_for_status()
+  File "/home/ubunt/get-resume-direction/.venv/lib/python3.12/site-packages/httpx/_models.py", line 829, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Server error '502 Bad Gateway' for url 'https://my.yingjiesheng.com/xjh-006-229-796.html'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/502
+{"message": "round_finished", "round": 1, "round_inserted": 0, "round_updated": 114, "idle_rounds": 1, "total_inserted": 0, "total_updated": 114, "results": [{"source_code": "remoteok_real", "run_id": 14, "status": "success", "crawled_count": 100, "inserted_count": 0, "updated_count": 100}, {"source_code": "yingjiesheng_xjh", "run_id": 15, "status": "success", "crawled_count": 14, "inserted_count": 0, "updated_count": 14}]}
+yingjiesheng list page unavailable, fallback to seed detail urls
+Traceback (most recent call last):
+  File "/home/ubunt/get-resume-direction/app/crawler/adapters/yingjiesheng_xjh.py", line 58, in crawl
+    raw_html = await self._fetch_text(self.list_url)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubunt/get-resume-direction/app/crawler/adapters/yingjiesheng_xjh.py", line 181, in _fetch_text
+    response.raise_for_status()
+  File "/home/ubunt/get-resume-direction/.venv/lib/python3.12/site-packages/httpx/_models.py", line 829, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Server error '502 Bad Gateway' for url 'https://my.yingjiesheng.com/xuanjianghui.html'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/502
+seed detail crawl failed
+Traceback (most recent call last):
+  File "/home/ubunt/get-resume-direction/app/crawler/adapters/yingjiesheng_xjh.py", line 100, in _crawl_from_seed_urls
+    detail_html = await self._fetch_text(detail_url)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubunt/get-resume-direction/app/crawler/adapters/yingjiesheng_xjh.py", line 181, in _fetch_text
+    response.raise_for_status()
+  File "/home/ubunt/get-resume-direction/.venv/lib/python3.12/site-packages/httpx/_models.py", line 829, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Server error '502 Bad Gateway' for url 'https://my.yingjiesheng.com/app/show_xjh.php?id=6229123'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/502
+campus crawl failed
+Traceback (most recent call last):
+  File "/home/ubunt/get-resume-direction/.venv/lib/python3.12/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 550, in _prepare_and_execute
+    self._rows = deque(await prepared_stmt.fetch(*parameters))
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubunt/get-resume-direction/.venv/lib/python3.12/site-packages/asyncpg/prepared_stmt.py", line 177, in fetch
+    data = await self.__bind_execute(args, 0, timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubunt/get-resume-direction/.venv/lib/python3.12/site-packages/asyncpg/prepared_stmt.py", line 268, in __bind_execute
+    data, status, _ = await self.__do_execute(
+                      ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubunt/get-resume-direction/.venv/lib/python3.12/site-packages/asyncpg/prepared_stmt.py", line 257, in __do_execute
+    return await executor(protocol)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "asyncpg/protocol/protocol.pyx", line 205, in bind_execute
+asyncpg.exceptions.UniqueViolationError: duplicate key value violates unique constraint "uq_campus_events_source_dedup_fingerprint"
+DETAIL:  Key (source_id, dedup_fingerprint)=(12, f6ee6f49231f8fdc51a8ea27dbfad45ab48ee4de) already exists.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ubunt/get-resume-direction/.venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "/home/ubunt/get-resume-direction/.venv/lib/python3.12/site-packages/sqlalchemy/engine/default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+  File "/home/ubunt/get-resume-direction/.venv/lib/python3.12/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 585, in execute
+    self._adapt_connection.await_(
+  File "/home/ubunt/get-resume-direction/.venv/lib/python3.12/site-packages/sqlalchemy/util/_concurrency_py3k.py", line 132, in await_only
+    return current.parent.switch(awaitable)  # type: ignore[no-any-return,attr-defined] # noqa: E501
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubunt/get-resume-direction/.venv/lib/python3.12/site-packages/sqlalchemy/util/_concurrency_py3k.py", line 196, in greenlet_spawn
+    value = await result
+            ^^^^^^^^^^^^
+  File "/home/ubunt/get-resume-direction/.venv/lib/python3.12/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 563, in _prepare_and_execute
+    self._handle_exception(error)
+  File "/home/ubunt/get-resume-direction/.venv/lib/python3.12/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 513, in _handle_exception
+    self._adapt_connection._handle_exception(error)
+  File "/home/ubunt/get-resume-direction/.venv/lib/python3.12/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 797, in _handle_exception
+    raise translated_error from error
+sqlalchemy.dialects.postgresql.asyncpg.AsyncAdapt_asyncpg_dbapi.IntegrityError: <class 'asyncpg.exceptions.UniqueViolationError'>: duplicate key value violates unique constraint "uq_campus_events_source_dedup_fingerprint"
+DETAIL:  Key (source_id, dedup_fingerprint)=(12, f6ee6f49231f8fdc51a8ea27dbfad45ab48ee4de) already exists.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ubunt/get-resume-direction/app/service/campus_crawl_service.py", line 39, in run_source
+    inserted_count, updated_count = await self.event_dao.upsert_events(session, source.id, events)
+                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubunt/get-resume-direction/app/dao/campus_event_dao.py", line 72, in upsert_events
+    await session.execute(stmt)
+  File "/home/ubunt/get-resume-direction/.venv/lib/python3.12/site-packages/sqlalchemy/ext/asyncio/session.py", line 449, in execute
+    result = await greenlet_spawn(
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubunt/get-resume-direction/.venv/lib/python3.12/site-packages/sqlalchemy/util/_concurrency_py3k.py", line 201, in greenlet_spawn
+    result = context.throw(*sys.exc_info())
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubunt/get-resume-direction/.venv/lib/python3.12/site-packages/sqlalchemy/orm/session.py", line 2351, in execute
+    return self._execute_internal(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubunt/get-resume-direction/.venv/lib/python3.12/site-packages/sqlalchemy/orm/session.py", line 2249, in _execute_internal
+    result: Result[Any] = compile_state_cls.orm_execute_statement(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubunt/get-resume-direction/.venv/lib/python3.12/site-packages/sqlalchemy/orm/bulk_persistence.py", line 1306, in orm_execute_statement
+    result = conn.execute(
+             ^^^^^^^^^^^^^
+  File "/home/ubunt/get-resume-direction/.venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1419, in execute
+    return meth(
+           ^^^^^
+  File "/home/ubunt/get-resume-direction/.venv/lib/python3.12/site-packages/sqlalchemy/sql/elements.py", line 527, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubunt/get-resume-direction/.venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1641, in _execute_clauseelement
+    ret = self._execute_context(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubunt/get-resume-direction/.venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1846, in _execute_context
+    return self._exec_single_context(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubunt/get-resume-direction/.venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1986, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "/home/ubunt/get-resume-direction/.venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 2363, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "/home/ubunt/get-resume-direction/.venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "/home/ubunt/get-resume-direction/.venv/lib/python3.12/site-packages/sqlalchemy/engine/default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+  File "/home/ubunt/get-resume-direction/.venv/lib/python3.12/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 585, in execute
+    self._adapt_connection.await_(
+  File "/home/ubunt/get-resume-direction/.venv/lib/python3.12/site-packages/sqlalchemy/util/_concurrency_py3k.py", line 132, in await_only
+    return current.parent.switch(awaitable)  # type: ignore[no-any-return,attr-defined] # noqa: E501
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubunt/get-resume-direction/.venv/lib/python3.12/site-packages/sqlalchemy/util/_concurrency_py3k.py", line 196, in greenlet_spawn
+    value = await result
+            ^^^^^^^^^^^^
+  File "/home/ubunt/get-resume-direction/.venv/lib/python3.12/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 563, in _prepare_and_execute
+    self._handle_exception(error)
+  File "/home/ubunt/get-resume-direction/.venv/lib/python3.12/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 513, in _handle_exception
+    self._adapt_connection._handle_exception(error)
+  File "/home/ubunt/get-resume-direction/.venv/lib/python3.12/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 797, in _handle_exception
+    raise translated_error from error
+sqlalchemy.exc.IntegrityError: (sqlalchemy.dialects.postgresql.asyncpg.IntegrityError) <class 'asyncpg.exceptions.UniqueViolationError'>: duplicate key value violates unique constraint "uq_campus_events_source_dedup_fingerprint"
+DETAIL:  Key (source_id, dedup_fingerprint)=(12, f6ee6f49231f8fdc51a8ea27dbfad45ab48ee4de) already exists.
+[SQL: INSERT INTO campus_events (source_id, external_event_id, source_url, registration_url, dedup_fingerprint, title, event_type, company_name, school_name, province, city, venue, starts_at, ends_at, event_status, description, tags_json, raw_payload_json, first_crawled_at, last_crawled_at) VALUES ($1::INTEGER, $2::VARCHAR, $3::VARCHAR, $4::VARCHAR, $5::VARCHAR, $6::VARCHAR, $7::VARCHAR, $8::VARCHAR, $9::VARCHAR, $10::VARCHAR, $11::VARCHAR, $12::VARCHAR, $13::TIMESTAMP WITH TIME ZONE, $14::TIMESTAMP WITH TIME ZONE, $15::VARCHAR, $16::VARCHAR, $17::JSONB, $18::JSONB, $19::TIMESTAMP WITH TIME ZONE, $20::TIMESTAMP WITH TIME ZONE) ON CONFLICT (source_id, external_event_id) DO UPDATE SET source_url = $21::VARCHAR, registration_url = $22::VARCHAR, dedup_fingerprint = $23::VARCHAR, title = $24::VARCHAR, event_type = $25::VARCHAR, company_name = $26::VARCHAR, school_name = $27::VARCHAR, province = $28::VARCHAR, city = $29::VARCHAR, venue = $30::VARCHAR, starts_at = $31::TIMESTAMP WITH TIME ZONE, ends_at = $32::TIMESTAMP WITH TIME ZONE, event_status = $33::VARCHAR, description = $34::VARCHAR, tags_json = $35::JSONB, raw_payload_json = $36::JSONB, last_crawled_at = $37::TIMESTAMP WITH TIME ZONE RETURNING campus_events.id]
+[parameters: (12, '006-228-755', 'https://my.yingjiesheng.com/xjh-006-228-755.html', None, 'f6ee6f49231f8fdc51a8ea27dbfad45ab48ee4de', '宣讲会', 'talk', '', '', None, '', '', None, None, 'upcoming', None, '["\\u5ba3\\u8bb2\\u4f1a", "\\u6821\\u56ed\\u62db\\u8058"]', '{"seed_url": "https://my.yingjiesheng.com/xjh-006-228-755.html", "detail": {"title": "", "company_name": "", "school_name": "", "city": "", "venue": "", "date": null, "external_event_id": "006-228-755", "registration_url": null, "description": null}}', datetime.datetime(2026, 2, 16, 9, 47, 3, 132624, tzinfo=datetime.timezone.utc), datetime.datetime(2026, 2, 16, 9, 47, 3, 132624, tzinfo=datetime.timezone.utc), 'https://my.yingjiesheng.com/xjh-006-228-755.html', None, 'f6ee6f49231f8fdc51a8ea27dbfad45ab48ee4de', '宣讲会', 'talk', '', '', None, '', '', None, None, 'upcoming', None, '["\\u5ba3\\u8bb2\\u4f1a", "\\u6821\\u56ed\\u62db\\u8058"]', '{"seed_url": "https://my.yingjiesheng.com/xjh-006-228-755.html", "detail": {"title": "", "company_name": "", "school_name": "", "city": "", "venue": "", "date": null, "external_event_id": "006-228-755", "registration_url": null, "description": null}}', datetime.datetime(2026, 2, 16, 9, 47, 3, 132624, tzinfo=datetime.timezone.utc))]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+{"message": "round_finished", "round": 2, "round_inserted": 0, "round_updated": 100, "idle_rounds": 2, "total_inserted": 0, "total_updated": 214, "results": [{"source_code": "remoteok_real", "run_id": 16, "status": "success", "crawled_count": 100, "inserted_count": 0, "updated_count": 100}, {"source_code": "yingjiesheng_xjh", "status": "failed", "inserted_count": 0, "updated_count": 0, "error": "(sqlalchemy.dialects.postgresql.asyncpg.IntegrityError) <class 'asyncpg.exceptions.UniqueViolationError'>: duplicate key value violates unique constraint \"uq_campus_events_source_dedup_fingerprint\"\nDETAIL:  Key (source_id, dedup_fingerprint)=(12, f6ee6f49231f8fdc51a8ea27dbfad45ab48ee4de) already exists.\n[SQL: INSERT INTO campus_events (source_id, external_event_id, source_url, registration_url, dedup_fingerprint, title, event_type, company_name, school_name, province, city, venue, starts_at, ends_at, event_status, description, tags_json, raw_payload_json, first_crawled_at, last_crawled_at) VALUES ($1::INTEGER, $2::VARCHAR, $3::VARCHAR, $4::VARCHAR, $5::VARCHAR, $6::VARCHAR, $7::VARCHAR, $8::VARCHAR, $9::VARCHAR, $10::VARCHAR, $11::VARCHAR, $12::VARCHAR, $13::TIMESTAMP WITH TIME ZONE, $14::TIMESTAMP WITH TIME ZONE, $15::VARCHAR, $16::VARCHAR, $17::JSONB, $18::JSONB, $19::TIMESTAMP WITH TIME ZONE, $20::TIMESTAMP WITH TIME ZONE) ON CONFLICT (source_id, external_event_id) DO UPDATE SET source_url = $21::VARCHAR, registration_url = $22::VARCHAR, dedup_fingerprint = $23::VARCHAR, title = $24::VARCHAR, event_type = $25::VARCHAR, company_name = $26::VARCHAR, school_name = $27::VARCHAR, province = $28::VARCHAR, city = $29::VARCHAR, venue = $30::VARCHAR, starts_at = $31::TIMESTAMP WITH TIME ZONE, ends_at = $32::TIMESTAMP WITH TIME ZONE, event_status = $33::VARCHAR, description = $34::VARCHAR, tags_json = $35::JSONB, raw_payload_json = $36::JSONB, last_crawled_at = $37::TIMESTAMP WITH TIME ZONE RETURNING campus_events.id]\n[parameters: (12, '006-228-755', 'https://my.yingjiesheng.com/xjh-006-228-755.html', None, 'f6ee6f49231f8fdc51a8ea27dbfad45ab48ee4de', '宣讲会', 'talk', '', '', None, '', '', None, None, 'upcoming', None, '[\"\\\\u5ba3\\\\u8bb2\\\\u4f1a\", \"\\\\u6821\\\\u56ed\\\\u62db\\\\u8058\"]', '{\"seed_url\": \"https://my.yingjiesheng.com/xjh-006-228-755.html\", \"detail\": {\"title\": \"\", \"company_name\": \"\", \"school_name\": \"\", \"city\": \"\", \"venue\": \"\", \"date\": null, \"external_event_id\": \"006-228-755\", \"registration_url\": null, \"description\": null}}', datetime.datetime(2026, 2, 16, 9, 47, 3, 132624, tzinfo=datetime.timezone.utc), datetime.datetime(2026, 2, 16, 9, 47, 3, 132624, tzinfo=datetime.timezone.utc), 'https://my.yingjiesheng.com/xjh-006-228-755.html', None, 'f6ee6f49231f8fdc51a8ea27dbfad45ab48ee4de', '宣讲会', 'talk', '', '', None, '', '', None, None, 'upcoming', None, '[\"\\\\u5ba3\\\\u8bb2\\\\u4f1a\", \"\\\\u6821\\\\u56ed\\\\u62db\\\\u8058\"]', '{\"seed_url\": \"https://my.yingjiesheng.com/xjh-006-228-755.html\", \"detail\": {\"title\": \"\", \"company_name\": \"\", \"school_name\": \"\", \"city\": \"\", \"venue\": \"\", \"date\": null, \"external_event_id\": \"006-228-755\", \"registration_url\": null, \"description\": null}}', datetime.datetime(2026, 2, 16, 9, 47, 3, 132624, tzinfo=datetime.timezone.utc))]\n(Background on this error at: https://sqlalche.me/e/20/gkpj)"}]}
+{"message": "round_finished", "round": 3, "round_inserted": 0, "round_updated": 122, "idle_rounds": 3, "total_inserted": 0, "total_updated": 336, "results": [{"source_code": "remoteok_real", "run_id": 18, "status": "success", "crawled_count": 100, "inserted_count": 0, "updated_count": 100}, {"source_code": "yingjiesheng_xjh", "run_id": 19, "status": "success", "crawled_count": 22, "inserted_count": 0, "updated_count": 22}]}
+{"message": "round_finished", "round": 4, "round_inserted": 0, "round_updated": 122, "idle_rounds": 4, "total_inserted": 0, "total_updated": 458, "results": [{"source_code": "remoteok_real", "run_id": 20, "status": "success", "crawled_count": 100, "inserted_count": 0, "updated_count": 100}, {"source_code": "yingjiesheng_xjh", "run_id": 21, "status": "success", "crawled_count": 22, "inserted_count": 0, "updated_count": 22}]}
+yingjiesheng detail crawl failed
+Traceback (most recent call last):
+  File "/home/ubunt/get-resume-direction/app/crawler/adapters/yingjiesheng_xjh.py", line 70, in crawl
+    detail_html = await self._fetch_text(detail_url)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubunt/get-resume-direction/app/crawler/adapters/yingjiesheng_xjh.py", line 181, in _fetch_text
+    response.raise_for_status()
+  File "/home/ubunt/get-resume-direction/.venv/lib/python3.12/site-packages/httpx/_models.py", line 829, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Server error '502 Bad Gateway' for url 'https://my.yingjiesheng.com/xjh-006-229-124.html'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/502
+yingjiesheng detail crawl failed
+Traceback (most recent call last):
+  File "/home/ubunt/get-resume-direction/app/crawler/adapters/yingjiesheng_xjh.py", line 70, in crawl
+    detail_html = await self._fetch_text(detail_url)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubunt/get-resume-direction/app/crawler/adapters/yingjiesheng_xjh.py", line 181, in _fetch_text
+    response.raise_for_status()
+  File "/home/ubunt/get-resume-direction/.venv/lib/python3.12/site-packages/httpx/_models.py", line 829, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Server error '502 Bad Gateway' for url 'https://my.yingjiesheng.com/xjh-006-229-960.html'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/502
+yingjiesheng detail crawl failed
+Traceback (most recent call last):
+  File "/home/ubunt/get-resume-direction/app/crawler/adapters/yingjiesheng_xjh.py", line 70, in crawl
+    detail_html = await self._fetch_text(detail_url)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubunt/get-resume-direction/app/crawler/adapters/yingjiesheng_xjh.py", line 181, in _fetch_text
+    response.raise_for_status()
+  File "/home/ubunt/get-resume-direction/.venv/lib/python3.12/site-packages/httpx/_models.py", line 829, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Server error '502 Bad Gateway' for url 'https://my.yingjiesheng.com/xjh-006-229-038.html'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/502
+yingjiesheng detail crawl failed
+Traceback (most recent call last):
+  File "/home/ubunt/get-resume-direction/app/crawler/adapters/yingjiesheng_xjh.py", line 70, in crawl
+    detail_html = await self._fetch_text(detail_url)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubunt/get-resume-direction/app/crawler/adapters/yingjiesheng_xjh.py", line 181, in _fetch_text
+    response.raise_for_status()
+  File "/home/ubunt/get-resume-direction/.venv/lib/python3.12/site-packages/httpx/_models.py", line 829, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Server error '502 Bad Gateway' for url 'https://my.yingjiesheng.com/xjh-006-229-472.html'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/502
+yingjiesheng detail crawl failed
+Traceback (most recent call last):
+  File "/home/ubunt/get-resume-direction/app/crawler/adapters/yingjiesheng_xjh.py", line 70, in crawl
+    detail_html = await self._fetch_text(detail_url)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubunt/get-resume-direction/app/crawler/adapters/yingjiesheng_xjh.py", line 181, in _fetch_text
+    response.raise_for_status()
+  File "/home/ubunt/get-resume-direction/.venv/lib/python3.12/site-packages/httpx/_models.py", line 829, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Server error '502 Bad Gateway' for url 'https://my.yingjiesheng.com/xjh-006-229-793.html'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/502
+yingjiesheng detail crawl failed
+Traceback (most recent call last):
+  File "/home/ubunt/get-resume-direction/app/crawler/adapters/yingjiesheng_xjh.py", line 70, in crawl
+    detail_html = await self._fetch_text(detail_url)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubunt/get-resume-direction/app/crawler/adapters/yingjiesheng_xjh.py", line 181, in _fetch_text
+    response.raise_for_status()
+  File "/home/ubunt/get-resume-direction/.venv/lib/python3.12/site-packages/httpx/_models.py", line 829, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Server error '502 Bad Gateway' for url 'https://my.yingjiesheng.com/xjh-006-229-794.html'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/502
+yingjiesheng detail crawl failed
+Traceback (most recent call last):
+  File "/home/ubunt/get-resume-direction/app/crawler/adapters/yingjiesheng_xjh.py", line 70, in crawl
+    detail_html = await self._fetch_text(detail_url)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubunt/get-resume-direction/app/crawler/adapters/yingjiesheng_xjh.py", line 181, in _fetch_text
+    response.raise_for_status()
+  File "/home/ubunt/get-resume-direction/.venv/lib/python3.12/site-packages/httpx/_models.py", line 829, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Server error '502 Bad Gateway' for url 'https://my.yingjiesheng.com/xjh-006-229-967.html'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/502
+yingjiesheng detail crawl failed
+Traceback (most recent call last):
+  File "/home/ubunt/get-resume-direction/app/crawler/adapters/yingjiesheng_xjh.py", line 70, in crawl
+    detail_html = await self._fetch_text(detail_url)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubunt/get-resume-direction/app/crawler/adapters/yingjiesheng_xjh.py", line 181, in _fetch_text
+    response.raise_for_status()
+  File "/home/ubunt/get-resume-direction/.venv/lib/python3.12/site-packages/httpx/_models.py", line 829, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Server error '502 Bad Gateway' for url 'https://my.yingjiesheng.com/xjh-006-228-072.html'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/502
+yingjiesheng detail crawl failed
+Traceback (most recent call last):
+  File "/home/ubunt/get-resume-direction/app/crawler/adapters/yingjiesheng_xjh.py", line 70, in crawl
+    detail_html = await self._fetch_text(detail_url)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubunt/get-resume-direction/app/crawler/adapters/yingjiesheng_xjh.py", line 181, in _fetch_text
+    response.raise_for_status()
+  File "/home/ubunt/get-resume-direction/.venv/lib/python3.12/site-packages/httpx/_models.py", line 829, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Server error '502 Bad Gateway' for url 'https://my.yingjiesheng.com/xjh-006-229-795.html'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/502
+{"message": "round_finished", "round": 5, "round_inserted": 0, "round_updated": 113, "idle_rounds": 5, "total_inserted": 0, "total_updated": 571, "results": [{"source_code": "remoteok_real", "run_id": 24, "status": "success", "crawled_count": 100, "inserted_count": 0, "updated_count": 100}, {"source_code": "yingjiesheng_xjh", "run_id": 25, "status": "success", "crawled_count": 13, "inserted_count": 0, "updated_count": 13}]}
+campus crawl failed
+Traceback (most recent call last):
+  File "/home/ubunt/get-resume-direction/.venv/lib/python3.12/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 550, in _prepare_and_execute
+    self._rows = deque(await prepared_stmt.fetch(*parameters))
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubunt/get-resume-direction/.venv/lib/python3.12/site-packages/asyncpg/prepared_stmt.py", line 177, in fetch
+    data = await self.__bind_execute(args, 0, timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubunt/get-resume-direction/.venv/lib/python3.12/site-packages/asyncpg/prepared_stmt.py", line 268, in __bind_execute
+    data, status, _ = await self.__do_execute(
+                      ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubunt/get-resume-direction/.venv/lib/python3.12/site-packages/asyncpg/prepared_stmt.py", line 257, in __do_execute
+    return await executor(protocol)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "asyncpg/protocol/protocol.pyx", line 205, in bind_execute
+asyncpg.exceptions.UniqueViolationError: duplicate key value violates unique constraint "uq_campus_events_source_dedup_fingerprint"
+DETAIL:  Key (source_id, dedup_fingerprint)=(12, f6ee6f49231f8fdc51a8ea27dbfad45ab48ee4de) already exists.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ubunt/get-resume-direction/.venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "/home/ubunt/get-resume-direction/.venv/lib/python3.12/site-packages/sqlalchemy/engine/default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+  File "/home/ubunt/get-resume-direction/.venv/lib/python3.12/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 585, in execute
+    self._adapt_connection.await_(
+  File "/home/ubunt/get-resume-direction/.venv/lib/python3.12/site-packages/sqlalchemy/util/_concurrency_py3k.py", line 132, in await_only
+    return current.parent.switch(awaitable)  # type: ignore[no-any-return,attr-defined] # noqa: E501
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubunt/get-resume-direction/.venv/lib/python3.12/site-packages/sqlalchemy/util/_concurrency_py3k.py", line 196, in greenlet_spawn
+    value = await result
+            ^^^^^^^^^^^^
+  File "/home/ubunt/get-resume-direction/.venv/lib/python3.12/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 563, in _prepare_and_execute
+    self._handle_exception(error)
+  File "/home/ubunt/get-resume-direction/.venv/lib/python3.12/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 513, in _handle_exception
+    self._adapt_connection._handle_exception(error)
+  File "/home/ubunt/get-resume-direction/.venv/lib/python3.12/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 797, in _handle_exception
+    raise translated_error from error
+sqlalchemy.dialects.postgresql.asyncpg.AsyncAdapt_asyncpg_dbapi.IntegrityError: <class 'asyncpg.exceptions.UniqueViolationError'>: duplicate key value violates unique constraint "uq_campus_events_source_dedup_fingerprint"
+DETAIL:  Key (source_id, dedup_fingerprint)=(12, f6ee6f49231f8fdc51a8ea27dbfad45ab48ee4de) already exists.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ubunt/get-resume-direction/app/service/campus_crawl_service.py", line 39, in run_source
+    inserted_count, updated_count = await self.event_dao.upsert_events(session, source.id, events)
+                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubunt/get-resume-direction/app/dao/campus_event_dao.py", line 72, in upsert_events
+    await session.execute(stmt)
+  File "/home/ubunt/get-resume-direction/.venv/lib/python3.12/site-packages/sqlalchemy/ext/asyncio/session.py", line 449, in execute
+    result = await greenlet_spawn(
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubunt/get-resume-direction/.venv/lib/python3.12/site-packages/sqlalchemy/util/_concurrency_py3k.py", line 201, in greenlet_spawn
+    result = context.throw(*sys.exc_info())
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubunt/get-resume-direction/.venv/lib/python3.12/site-packages/sqlalchemy/orm/session.py", line 2351, in execute
+    return self._execute_internal(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubunt/get-resume-direction/.venv/lib/python3.12/site-packages/sqlalchemy/orm/session.py", line 2249, in _execute_internal
+    result: Result[Any] = compile_state_cls.orm_execute_statement(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubunt/get-resume-direction/.venv/lib/python3.12/site-packages/sqlalchemy/orm/bulk_persistence.py", line 1306, in orm_execute_statement
+    result = conn.execute(
+             ^^^^^^^^^^^^^
+  File "/home/ubunt/get-resume-direction/.venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1419, in execute
+    return meth(
+           ^^^^^
+  File "/home/ubunt/get-resume-direction/.venv/lib/python3.12/site-packages/sqlalchemy/sql/elements.py", line 527, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubunt/get-resume-direction/.venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1641, in _execute_clauseelement
+    ret = self._execute_context(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubunt/get-resume-direction/.venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1846, in _execute_context
+    return self._exec_single_context(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubunt/get-resume-direction/.venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1986, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "/home/ubunt/get-resume-direction/.venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 2363, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "/home/ubunt/get-resume-direction/.venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "/home/ubunt/get-resume-direction/.venv/lib/python3.12/site-packages/sqlalchemy/engine/default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+  File "/home/ubunt/get-resume-direction/.venv/lib/python3.12/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 585, in execute
+    self._adapt_connection.await_(
+  File "/home/ubunt/get-resume-direction/.venv/lib/python3.12/site-packages/sqlalchemy/util/_concurrency_py3k.py", line 132, in await_only
+    return current.parent.switch(awaitable)  # type: ignore[no-any-return,attr-defined] # noqa: E501
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubunt/get-resume-direction/.venv/lib/python3.12/site-packages/sqlalchemy/util/_concurrency_py3k.py", line 196, in greenlet_spawn
+    value = await result
+            ^^^^^^^^^^^^
+  File "/home/ubunt/get-resume-direction/.venv/lib/python3.12/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 563, in _prepare_and_execute
+    self._handle_exception(error)
+  File "/home/ubunt/get-resume-direction/.venv/lib/python3.12/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 513, in _handle_exception
+    self._adapt_connection._handle_exception(error)
+  File "/home/ubunt/get-resume-direction/.venv/lib/python3.12/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 797, in _handle_exception
+    raise translated_error from error
+sqlalchemy.exc.IntegrityError: (sqlalchemy.dialects.postgresql.asyncpg.IntegrityError) <class 'asyncpg.exceptions.UniqueViolationError'>: duplicate key value violates unique constraint "uq_campus_events_source_dedup_fingerprint"
+DETAIL:  Key (source_id, dedup_fingerprint)=(12, f6ee6f49231f8fdc51a8ea27dbfad45ab48ee4de) already exists.
+[SQL: INSERT INTO campus_events (source_id, external_event_id, source_url, registration_url, dedup_fingerprint, title, event_type, company_name, school_name, province, city, venue, starts_at, ends_at, event_status, description, tags_json, raw_payload_json, first_crawled_at, last_crawled_at) VALUES ($1::INTEGER, $2::VARCHAR, $3::VARCHAR, $4::VARCHAR, $5::VARCHAR, $6::VARCHAR, $7::VARCHAR, $8::VARCHAR, $9::VARCHAR, $10::VARCHAR, $11::VARCHAR, $12::VARCHAR, $13::TIMESTAMP WITH TIME ZONE, $14::TIMESTAMP WITH TIME ZONE, $15::VARCHAR, $16::VARCHAR, $17::JSONB, $18::JSONB, $19::TIMESTAMP WITH TIME ZONE, $20::TIMESTAMP WITH TIME ZONE) ON CONFLICT (source_id, external_event_id) DO UPDATE SET source_url = $21::VARCHAR, registration_url = $22::VARCHAR, dedup_fingerprint = $23::VARCHAR, title = $24::VARCHAR, event_type = $25::VARCHAR, company_name = $26::VARCHAR, school_name = $27::VARCHAR, province = $28::VARCHAR, city = $29::VARCHAR, venue = $30::VARCHAR, starts_at = $31::TIMESTAMP WITH TIME ZONE, ends_at = $32::TIMESTAMP WITH TIME ZONE, event_status = $33::VARCHAR, description = $34::VARCHAR, tags_json = $35::JSONB, raw_payload_json = $36::JSONB, last_crawled_at = $37::TIMESTAMP WITH TIME ZONE RETURNING campus_events.id]
+[parameters: (12, '006-229-123', 'https://my.yingjiesheng.com/xjh-006-229-123.html', None, 'f6ee6f49231f8fdc51a8ea27dbfad45ab48ee4de', '宣讲会', 'talk', '', '', None, '', '', None, None, 'upcoming', None, '["\\u5ba3\\u8bb2\\u4f1a", "\\u6821\\u56ed\\u62db\\u8058"]', '{"seed_url": "https://my.yingjiesheng.com/xjh-006-229-123.html", "detail": {"title": "", "company_name": "", "school_name": "", "city": "", "venue": "", "date": null, "external_event_id": "006-229-123", "registration_url": null, "description": null}}', datetime.datetime(2026, 2, 16, 9, 50, 1, 78745, tzinfo=datetime.timezone.utc), datetime.datetime(2026, 2, 16, 9, 50, 1, 78745, tzinfo=datetime.timezone.utc), 'https://my.yingjiesheng.com/xjh-006-229-123.html', None, 'f6ee6f49231f8fdc51a8ea27dbfad45ab48ee4de', '宣讲会', 'talk', '', '', None, '', '', None, None, 'upcoming', None, '["\\u5ba3\\u8bb2\\u4f1a", "\\u6821\\u56ed\\u62db\\u8058"]', '{"seed_url": "https://my.yingjiesheng.com/xjh-006-229-123.html", "detail": {"title": "", "company_name": "", "school_name": "", "city": "", "venue": "", "date": null, "external_event_id": "006-229-123", "registration_url": null, "description": null}}', datetime.datetime(2026, 2, 16, 9, 50, 1, 78745, tzinfo=datetime.timezone.utc))]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+{"message": "round_finished", "round": 6, "round_inserted": 0, "round_updated": 100, "idle_rounds": 6, "total_inserted": 0, "total_updated": 671, "results": [{"source_code": "remoteok_real", "run_id": 28, "status": "success", "crawled_count": 100, "inserted_count": 0, "updated_count": 100}, {"source_code": "yingjiesheng_xjh", "status": "failed", "inserted_count": 0, "updated_count": 0, "error": "(sqlalchemy.dialects.postgresql.asyncpg.IntegrityError) <class 'asyncpg.exceptions.UniqueViolationError'>: duplicate key value violates unique constraint \"uq_campus_events_source_dedup_fingerprint\"\nDETAIL:  Key (source_id, dedup_fingerprint)=(12, f6ee6f49231f8fdc51a8ea27dbfad45ab48ee4de) already exists.\n[SQL: INSERT INTO campus_events (source_id, external_event_id, source_url, registration_url, dedup_fingerprint, title, event_type, company_name, school_name, province, city, venue, starts_at, ends_at, event_status, description, tags_json, raw_payload_json, first_crawled_at, last_crawled_at) VALUES ($1::INTEGER, $2::VARCHAR, $3::VARCHAR, $4::VARCHAR, $5::VARCHAR, $6::VARCHAR, $7::VARCHAR, $8::VARCHAR, $9::VARCHAR, $10::VARCHAR, $11::VARCHAR, $12::VARCHAR, $13::TIMESTAMP WITH TIME ZONE, $14::TIMESTAMP WITH TIME ZONE, $15::VARCHAR, $16::VARCHAR, $17::JSONB, $18::JSONB, $19::TIMESTAMP WITH TIME ZONE, $20::TIMESTAMP WITH TIME ZONE) ON CONFLICT (source_id, external_event_id) DO UPDATE SET source_url = $21::VARCHAR, registration_url = $22::VARCHAR, dedup_fingerprint = $23::VARCHAR, title = $24::VARCHAR, event_type = $25::VARCHAR, company_name = $26::VARCHAR, school_name = $27::VARCHAR, province = $28::VARCHAR, city = $29::VARCHAR, venue = $30::VARCHAR, starts_at = $31::TIMESTAMP WITH TIME ZONE, ends_at = $32::TIMESTAMP WITH TIME ZONE, event_status = $33::VARCHAR, description = $34::VARCHAR, tags_json = $35::JSONB, raw_payload_json = $36::JSONB, last_crawled_at = $37::TIMESTAMP WITH TIME ZONE RETURNING campus_events.id]\n[parameters: (12, '006-229-123', 'https://my.yingjiesheng.com/xjh-006-229-123.html', None, 'f6ee6f49231f8fdc51a8ea27dbfad45ab48ee4de', '宣讲会', 'talk', '', '', None, '', '', None, None, 'upcoming', None, '[\"\\\\u5ba3\\\\u8bb2\\\\u4f1a\", \"\\\\u6821\\\\u56ed\\\\u62db\\\\u8058\"]', '{\"seed_url\": \"https://my.yingjiesheng.com/xjh-006-229-123.html\", \"detail\": {\"title\": \"\", \"company_name\": \"\", \"school_name\": \"\", \"city\": \"\", \"venue\": \"\", \"date\": null, \"external_event_id\": \"006-229-123\", \"registration_url\": null, \"description\": null}}', datetime.datetime(2026, 2, 16, 9, 50, 1, 78745, tzinfo=datetime.timezone.utc), datetime.datetime(2026, 2, 16, 9, 50, 1, 78745, tzinfo=datetime.timezone.utc), 'https://my.yingjiesheng.com/xjh-006-229-123.html', None, 'f6ee6f49231f8fdc51a8ea27dbfad45ab48ee4de', '宣讲会', 'talk', '', '', None, '', '', None, None, 'upcoming', None, '[\"\\\\u5ba3\\\\u8bb2\\\\u4f1a\", \"\\\\u6821\\\\u56ed\\\\u62db\\\\u8058\"]', '{\"seed_url\": \"https://my.yingjiesheng.com/xjh-006-229-123.html\", \"detail\": {\"title\": \"\", \"company_name\": \"\", \"school_name\": \"\", \"city\": \"\", \"venue\": \"\", \"date\": null, \"external_event_id\": \"006-229-123\", \"registration_url\": null, \"description\": null}}', datetime.datetime(2026, 2, 16, 9, 50, 1, 78745, tzinfo=datetime.timezone.utc))]\n(Background on this error at: https://sqlalche.me/e/20/gkpj)"}]}
+campus crawl failed
+Traceback (most recent call last):
+  File "/home/ubunt/get-resume-direction/.venv/lib/python3.12/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 550, in _prepare_and_execute
+    self._rows = deque(await prepared_stmt.fetch(*parameters))
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubunt/get-resume-direction/.venv/lib/python3.12/site-packages/asyncpg/prepared_stmt.py", line 177, in fetch
+    data = await self.__bind_execute(args, 0, timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubunt/get-resume-direction/.venv/lib/python3.12/site-packages/asyncpg/prepared_stmt.py", line 268, in __bind_execute
+    data, status, _ = await self.__do_execute(
+                      ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubunt/get-resume-direction/.venv/lib/python3.12/site-packages/asyncpg/prepared_stmt.py", line 257, in __do_execute
+    return await executor(protocol)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "asyncpg/protocol/protocol.pyx", line 205, in bind_execute
+asyncpg.exceptions.UniqueViolationError: duplicate key value violates unique constraint "uq_campus_events_source_dedup_fingerprint"
+DETAIL:  Key (source_id, dedup_fingerprint)=(12, f6ee6f49231f8fdc51a8ea27dbfad45ab48ee4de) already exists.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ubunt/get-resume-direction/.venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "/home/ubunt/get-resume-direction/.venv/lib/python3.12/site-packages/sqlalchemy/engine/default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+  File "/home/ubunt/get-resume-direction/.venv/lib/python3.12/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 585, in execute
+    self._adapt_connection.await_(
+  File "/home/ubunt/get-resume-direction/.venv/lib/python3.12/site-packages/sqlalchemy/util/_concurrency_py3k.py", line 132, in await_only
+    return current.parent.switch(awaitable)  # type: ignore[no-any-return,attr-defined] # noqa: E501
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubunt/get-resume-direction/.venv/lib/python3.12/site-packages/sqlalchemy/util/_concurrency_py3k.py", line 196, in greenlet_spawn
+    value = await result
+            ^^^^^^^^^^^^
+  File "/home/ubunt/get-resume-direction/.venv/lib/python3.12/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 563, in _prepare_and_execute
+    self._handle_exception(error)
+  File "/home/ubunt/get-resume-direction/.venv/lib/python3.12/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 513, in _handle_exception
+    self._adapt_connection._handle_exception(error)
+  File "/home/ubunt/get-resume-direction/.venv/lib/python3.12/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 797, in _handle_exception
+    raise translated_error from error
+sqlalchemy.dialects.postgresql.asyncpg.AsyncAdapt_asyncpg_dbapi.IntegrityError: <class 'asyncpg.exceptions.UniqueViolationError'>: duplicate key value violates unique constraint "uq_campus_events_source_dedup_fingerprint"
+DETAIL:  Key (source_id, dedup_fingerprint)=(12, f6ee6f49231f8fdc51a8ea27dbfad45ab48ee4de) already exists.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ubunt/get-resume-direction/app/service/campus_crawl_service.py", line 39, in run_source
+    inserted_count, updated_count = await self.event_dao.upsert_events(session, source.id, events)
+                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubunt/get-resume-direction/app/dao/campus_event_dao.py", line 72, in upsert_events
+    await session.execute(stmt)
+  File "/home/ubunt/get-resume-direction/.venv/lib/python3.12/site-packages/sqlalchemy/ext/asyncio/session.py", line 449, in execute
+    result = await greenlet_spawn(
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubunt/get-resume-direction/.venv/lib/python3.12/site-packages/sqlalchemy/util/_concurrency_py3k.py", line 201, in greenlet_spawn
+    result = context.throw(*sys.exc_info())
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubunt/get-resume-direction/.venv/lib/python3.12/site-packages/sqlalchemy/orm/session.py", line 2351, in execute
+    return self._execute_internal(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubunt/get-resume-direction/.venv/lib/python3.12/site-packages/sqlalchemy/orm/session.py", line 2249, in _execute_internal
+    result: Result[Any] = compile_state_cls.orm_execute_statement(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubunt/get-resume-direction/.venv/lib/python3.12/site-packages/sqlalchemy/orm/bulk_persistence.py", line 1306, in orm_execute_statement
+    result = conn.execute(
+             ^^^^^^^^^^^^^
+  File "/home/ubunt/get-resume-direction/.venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1419, in execute
+    return meth(
+           ^^^^^
+  File "/home/ubunt/get-resume-direction/.venv/lib/python3.12/site-packages/sqlalchemy/sql/elements.py", line 527, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubunt/get-resume-direction/.venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1641, in _execute_clauseelement
+    ret = self._execute_context(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubunt/get-resume-direction/.venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1846, in _execute_context
+    return self._exec_single_context(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubunt/get-resume-direction/.venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1986, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "/home/ubunt/get-resume-direction/.venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 2363, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "/home/ubunt/get-resume-direction/.venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "/home/ubunt/get-resume-direction/.venv/lib/python3.12/site-packages/sqlalchemy/engine/default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+  File "/home/ubunt/get-resume-direction/.venv/lib/python3.12/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 585, in execute
+    self._adapt_connection.await_(
+  File "/home/ubunt/get-resume-direction/.venv/lib/python3.12/site-packages/sqlalchemy/util/_concurrency_py3k.py", line 132, in await_only
+    return current.parent.switch(awaitable)  # type: ignore[no-any-return,attr-defined] # noqa: E501
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubunt/get-resume-direction/.venv/lib/python3.12/site-packages/sqlalchemy/util/_concurrency_py3k.py", line 196, in greenlet_spawn
+    value = await result
+            ^^^^^^^^^^^^
+  File "/home/ubunt/get-resume-direction/.venv/lib/python3.12/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 563, in _prepare_and_execute
+    self._handle_exception(error)
+  File "/home/ubunt/get-resume-direction/.venv/lib/python3.12/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 513, in _handle_exception
+    self._adapt_connection._handle_exception(error)
+  File "/home/ubunt/get-resume-direction/.venv/lib/python3.12/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 797, in _handle_exception
+    raise translated_error from error
+sqlalchemy.exc.IntegrityError: (sqlalchemy.dialects.postgresql.asyncpg.IntegrityError) <class 'asyncpg.exceptions.UniqueViolationError'>: duplicate key value violates unique constraint "uq_campus_events_source_dedup_fingerprint"
+DETAIL:  Key (source_id, dedup_fingerprint)=(12, f6ee6f49231f8fdc51a8ea27dbfad45ab48ee4de) already exists.
+[SQL: INSERT INTO campus_events (source_id, external_event_id, source_url, registration_url, dedup_fingerprint, title, event_type, company_name, school_name, province, city, venue, starts_at, ends_at, event_status, description, tags_json, raw_payload_json, first_crawled_at, last_crawled_at) VALUES ($1::INTEGER, $2::VARCHAR, $3::VARCHAR, $4::VARCHAR, $5::VARCHAR, $6::VARCHAR, $7::VARCHAR, $8::VARCHAR, $9::VARCHAR, $10::VARCHAR, $11::VARCHAR, $12::VARCHAR, $13::TIMESTAMP WITH TIME ZONE, $14::TIMESTAMP WITH TIME ZONE, $15::VARCHAR, $16::VARCHAR, $17::JSONB, $18::JSONB, $19::TIMESTAMP WITH TIME ZONE, $20::TIMESTAMP WITH TIME ZONE) ON CONFLICT (source_id, external_event_id) DO UPDATE SET source_url = $21::VARCHAR, registration_url = $22::VARCHAR, dedup_fingerprint = $23::VARCHAR, title = $24::VARCHAR, event_type = $25::VARCHAR, company_name = $26::VARCHAR, school_name = $27::VARCHAR, province = $28::VARCHAR, city = $29::VARCHAR, venue = $30::VARCHAR, starts_at = $31::TIMESTAMP WITH TIME ZONE, ends_at = $32::TIMESTAMP WITH TIME ZONE, event_status = $33::VARCHAR, description = $34::VARCHAR, tags_json = $35::JSONB, raw_payload_json = $36::JSONB, last_crawled_at = $37::TIMESTAMP WITH TIME ZONE RETURNING campus_events.id]
+[parameters: (12, '006-229-123', 'https://my.yingjiesheng.com/xjh-006-229-123.html', None, 'f6ee6f49231f8fdc51a8ea27dbfad45ab48ee4de', '宣讲会', 'talk', '', '', None, '', '', None, None, 'upcoming', None, '["\\u5ba3\\u8bb2\\u4f1a", "\\u6821\\u56ed\\u62db\\u8058"]', '{"seed_url": "https://my.yingjiesheng.com/xjh-006-229-123.html", "detail": {"title": "", "company_name": "", "school_name": "", "city": "", "venue": "", "date": null, "external_event_id": "006-229-123", "registration_url": null, "description": null}}', datetime.datetime(2026, 2, 16, 9, 50, 37, 539813, tzinfo=datetime.timezone.utc), datetime.datetime(2026, 2, 16, 9, 50, 37, 539813, tzinfo=datetime.timezone.utc), 'https://my.yingjiesheng.com/xjh-006-229-123.html', None, 'f6ee6f49231f8fdc51a8ea27dbfad45ab48ee4de', '宣讲会', 'talk', '', '', None, '', '', None, None, 'upcoming', None, '["\\u5ba3\\u8bb2\\u4f1a", "\\u6821\\u56ed\\u62db\\u8058"]', '{"seed_url": "https://my.yingjiesheng.com/xjh-006-229-123.html", "detail": {"title": "", "company_name": "", "school_name": "", "city": "", "venue": "", "date": null, "external_event_id": "006-229-123", "registration_url": null, "description": null}}', datetime.datetime(2026, 2, 16, 9, 50, 37, 539813, tzinfo=datetime.timezone.utc))]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+{"message": "round_finished", "round": 7, "round_inserted": 0, "round_updated": 100, "idle_rounds": 7, "total_inserted": 0, "total_updated": 771, "results": [{"source_code": "remoteok_real", "run_id": 32, "status": "success", "crawled_count": 100, "inserted_count": 0, "updated_count": 100}, {"source_code": "yingjiesheng_xjh", "status": "failed", "inserted_count": 0, "updated_count": 0, "error": "(sqlalchemy.dialects.postgresql.asyncpg.IntegrityError) <class 'asyncpg.exceptions.UniqueViolationError'>: duplicate key value violates unique constraint \"uq_campus_events_source_dedup_fingerprint\"\nDETAIL:  Key (source_id, dedup_fingerprint)=(12, f6ee6f49231f8fdc51a8ea27dbfad45ab48ee4de) already exists.\n[SQL: INSERT INTO campus_events (source_id, external_event_id, source_url, registration_url, dedup_fingerprint, title, event_type, company_name, school_name, province, city, venue, starts_at, ends_at, event_status, description, tags_json, raw_payload_json, first_crawled_at, last_crawled_at) VALUES ($1::INTEGER, $2::VARCHAR, $3::VARCHAR, $4::VARCHAR, $5::VARCHAR, $6::VARCHAR, $7::VARCHAR, $8::VARCHAR, $9::VARCHAR, $10::VARCHAR, $11::VARCHAR, $12::VARCHAR, $13::TIMESTAMP WITH TIME ZONE, $14::TIMESTAMP WITH TIME ZONE, $15::VARCHAR, $16::VARCHAR, $17::JSONB, $18::JSONB, $19::TIMESTAMP WITH TIME ZONE, $20::TIMESTAMP WITH TIME ZONE) ON CONFLICT (source_id, external_event_id) DO UPDATE SET source_url = $21::VARCHAR, registration_url = $22::VARCHAR, dedup_fingerprint = $23::VARCHAR, title = $24::VARCHAR, event_type = $25::VARCHAR, company_name = $26::VARCHAR, school_name = $27::VARCHAR, province = $28::VARCHAR, city = $29::VARCHAR, venue = $30::VARCHAR, starts_at = $31::TIMESTAMP WITH TIME ZONE, ends_at = $32::TIMESTAMP WITH TIME ZONE, event_status = $33::VARCHAR, description = $34::VARCHAR, tags_json = $35::JSONB, raw_payload_json = $36::JSONB, last_crawled_at = $37::TIMESTAMP WITH TIME ZONE RETURNING campus_events.id]\n[parameters: (12, '006-229-123', 'https://my.yingjiesheng.com/xjh-006-229-123.html', None, 'f6ee6f49231f8fdc51a8ea27dbfad45ab48ee4de', '宣讲会', 'talk', '', '', None, '', '', None, None, 'upcoming', None, '[\"\\\\u5ba3\\\\u8bb2\\\\u4f1a\", \"\\\\u6821\\\\u56ed\\\\u62db\\\\u8058\"]', '{\"seed_url\": \"https://my.yingjiesheng.com/xjh-006-229-123.html\", \"detail\": {\"title\": \"\", \"company_name\": \"\", \"school_name\": \"\", \"city\": \"\", \"venue\": \"\", \"date\": null, \"external_event_id\": \"006-229-123\", \"registration_url\": null, \"description\": null}}', datetime.datetime(2026, 2, 16, 9, 50, 37, 539813, tzinfo=datetime.timezone.utc), datetime.datetime(2026, 2, 16, 9, 50, 37, 539813, tzinfo=datetime.timezone.utc), 'https://my.yingjiesheng.com/xjh-006-229-123.html', None, 'f6ee6f49231f8fdc51a8ea27dbfad45ab48ee4de', '宣讲会', 'talk', '', '', None, '', '', None, None, 'upcoming', None, '[\"\\\\u5ba3\\\\u8bb2\\\\u4f1a\", \"\\\\u6821\\\\u56ed\\\\u62db\\\\u8058\"]', '{\"seed_url\": \"https://my.yingjiesheng.com/xjh-006-229-123.html\", \"detail\": {\"title\": \"\", \"company_name\": \"\", \"school_name\": \"\", \"city\": \"\", \"venue\": \"\", \"date\": null, \"external_event_id\": \"006-229-123\", \"registration_url\": null, \"description\": null}}', datetime.datetime(2026, 2, 16, 9, 50, 37, 539813, tzinfo=datetime.timezone.utc))]\n(Background on this error at: https://sqlalche.me/e/20/gkpj)"}]}
+campus crawl failed
+Traceback (most recent call last):
+  File "/home/ubunt/get-resume-direction/.venv/lib/python3.12/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 550, in _prepare_and_execute
+    self._rows = deque(await prepared_stmt.fetch(*parameters))
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubunt/get-resume-direction/.venv/lib/python3.12/site-packages/asyncpg/prepared_stmt.py", line 177, in fetch
+    data = await self.__bind_execute(args, 0, timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubunt/get-resume-direction/.venv/lib/python3.12/site-packages/asyncpg/prepared_stmt.py", line 268, in __bind_execute
+    data, status, _ = await self.__do_execute(
+                      ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubunt/get-resume-direction/.venv/lib/python3.12/site-packages/asyncpg/prepared_stmt.py", line 257, in __do_execute
+    return await executor(protocol)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "asyncpg/protocol/protocol.pyx", line 205, in bind_execute
+asyncpg.exceptions.UniqueViolationError: duplicate key value violates unique constraint "uq_campus_events_source_dedup_fingerprint"
+DETAIL:  Key (source_id, dedup_fingerprint)=(12, f6ee6f49231f8fdc51a8ea27dbfad45ab48ee4de) already exists.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ubunt/get-resume-direction/.venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "/home/ubunt/get-resume-direction/.venv/lib/python3.12/site-packages/sqlalchemy/engine/default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+  File "/home/ubunt/get-resume-direction/.venv/lib/python3.12/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 585, in execute
+    self._adapt_connection.await_(
+  File "/home/ubunt/get-resume-direction/.venv/lib/python3.12/site-packages/sqlalchemy/util/_concurrency_py3k.py", line 132, in await_only
+    return current.parent.switch(awaitable)  # type: ignore[no-any-return,attr-defined] # noqa: E501
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubunt/get-resume-direction/.venv/lib/python3.12/site-packages/sqlalchemy/util/_concurrency_py3k.py", line 196, in greenlet_spawn
+    value = await result
+            ^^^^^^^^^^^^
+  File "/home/ubunt/get-resume-direction/.venv/lib/python3.12/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 563, in _prepare_and_execute
+    self._handle_exception(error)
+  File "/home/ubunt/get-resume-direction/.venv/lib/python3.12/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 513, in _handle_exception
+    self._adapt_connection._handle_exception(error)
+  File "/home/ubunt/get-resume-direction/.venv/lib/python3.12/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 797, in _handle_exception
+    raise translated_error from error
+sqlalchemy.dialects.postgresql.asyncpg.AsyncAdapt_asyncpg_dbapi.IntegrityError: <class 'asyncpg.exceptions.UniqueViolationError'>: duplicate key value violates unique constraint "uq_campus_events_source_dedup_fingerprint"
+DETAIL:  Key (source_id, dedup_fingerprint)=(12, f6ee6f49231f8fdc51a8ea27dbfad45ab48ee4de) already exists.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ubunt/get-resume-direction/app/service/campus_crawl_service.py", line 39, in run_source
+    inserted_count, updated_count = await self.event_dao.upsert_events(session, source.id, events)
+                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubunt/get-resume-direction/app/dao/campus_event_dao.py", line 72, in upsert_events
+    await session.execute(stmt)
+  File "/home/ubunt/get-resume-direction/.venv/lib/python3.12/site-packages/sqlalchemy/ext/asyncio/session.py", line 449, in execute
+    result = await greenlet_spawn(
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubunt/get-resume-direction/.venv/lib/python3.12/site-packages/sqlalchemy/util/_concurrency_py3k.py", line 201, in greenlet_spawn
+    result = context.throw(*sys.exc_info())
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubunt/get-resume-direction/.venv/lib/python3.12/site-packages/sqlalchemy/orm/session.py", line 2351, in execute
+    return self._execute_internal(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubunt/get-resume-direction/.venv/lib/python3.12/site-packages/sqlalchemy/orm/session.py", line 2249, in _execute_internal
+    result: Result[Any] = compile_state_cls.orm_execute_statement(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubunt/get-resume-direction/.venv/lib/python3.12/site-packages/sqlalchemy/orm/bulk_persistence.py", line 1306, in orm_execute_statement
+    result = conn.execute(
+             ^^^^^^^^^^^^^
+  File "/home/ubunt/get-resume-direction/.venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1419, in execute
+    return meth(
+           ^^^^^
+  File "/home/ubunt/get-resume-direction/.venv/lib/python3.12/site-packages/sqlalchemy/sql/elements.py", line 527, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubunt/get-resume-direction/.venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1641, in _execute_clauseelement
+    ret = self._execute_context(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubunt/get-resume-direction/.venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1846, in _execute_context
+    return self._exec_single_context(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubunt/get-resume-direction/.venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1986, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "/home/ubunt/get-resume-direction/.venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 2363, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "/home/ubunt/get-resume-direction/.venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "/home/ubunt/get-resume-direction/.venv/lib/python3.12/site-packages/sqlalchemy/engine/default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+  File "/home/ubunt/get-resume-direction/.venv/lib/python3.12/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 585, in execute
+    self._adapt_connection.await_(
+  File "/home/ubunt/get-resume-direction/.venv/lib/python3.12/site-packages/sqlalchemy/util/_concurrency_py3k.py", line 132, in await_only
+    return current.parent.switch(awaitable)  # type: ignore[no-any-return,attr-defined] # noqa: E501
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubunt/get-resume-direction/.venv/lib/python3.12/site-packages/sqlalchemy/util/_concurrency_py3k.py", line 196, in greenlet_spawn
+    value = await result
+            ^^^^^^^^^^^^
+  File "/home/ubunt/get-resume-direction/.venv/lib/python3.12/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 563, in _prepare_and_execute
+    self._handle_exception(error)
+  File "/home/ubunt/get-resume-direction/.venv/lib/python3.12/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 513, in _handle_exception
+    self._adapt_connection._handle_exception(error)
+  File "/home/ubunt/get-resume-direction/.venv/lib/python3.12/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 797, in _handle_exception
+    raise translated_error from error
+sqlalchemy.exc.IntegrityError: (sqlalchemy.dialects.postgresql.asyncpg.IntegrityError) <class 'asyncpg.exceptions.UniqueViolationError'>: duplicate key value violates unique constraint "uq_campus_events_source_dedup_fingerprint"
+DETAIL:  Key (source_id, dedup_fingerprint)=(12, f6ee6f49231f8fdc51a8ea27dbfad45ab48ee4de) already exists.
+[SQL: INSERT INTO campus_events (source_id, external_event_id, source_url, registration_url, dedup_fingerprint, title, event_type, company_name, school_name, province, city, venue, starts_at, ends_at, event_status, description, tags_json, raw_payload_json, first_crawled_at, last_crawled_at) VALUES ($1::INTEGER, $2::VARCHAR, $3::VARCHAR, $4::VARCHAR, $5::VARCHAR, $6::VARCHAR, $7::VARCHAR, $8::VARCHAR, $9::VARCHAR, $10::VARCHAR, $11::VARCHAR, $12::VARCHAR, $13::TIMESTAMP WITH TIME ZONE, $14::TIMESTAMP WITH TIME ZONE, $15::VARCHAR, $16::VARCHAR, $17::JSONB, $18::JSONB, $19::TIMESTAMP WITH TIME ZONE, $20::TIMESTAMP WITH TIME ZONE) ON CONFLICT (source_id, external_event_id) DO UPDATE SET source_url = $21::VARCHAR, registration_url = $22::VARCHAR, dedup_fingerprint = $23::VARCHAR, title = $24::VARCHAR, event_type = $25::VARCHAR, company_name = $26::VARCHAR, school_name = $27::VARCHAR, province = $28::VARCHAR, city = $29::VARCHAR, venue = $30::VARCHAR, starts_at = $31::TIMESTAMP WITH TIME ZONE, ends_at = $32::TIMESTAMP WITH TIME ZONE, event_status = $33::VARCHAR, description = $34::VARCHAR, tags_json = $35::JSONB, raw_payload_json = $36::JSONB, last_crawled_at = $37::TIMESTAMP WITH TIME ZONE RETURNING campus_events.id]
+[parameters: (12, '006-229-123', 'https://my.yingjiesheng.com/xjh-006-229-123.html', None, 'f6ee6f49231f8fdc51a8ea27dbfad45ab48ee4de', '宣讲会', 'talk', '', '', None, '', '', None, None, 'upcoming', None, '["\\u5ba3\\u8bb2\\u4f1a", "\\u6821\\u56ed\\u62db\\u8058"]', '{"seed_url": "https://my.yingjiesheng.com/xjh-006-229-123.html", "detail": {"title": "", "company_name": "", "school_name": "", "city": "", "venue": "", "date": null, "external_event_id": "006-229-123", "registration_url": null, "description": null}}', datetime.datetime(2026, 2, 16, 9, 51, 13, 645445, tzinfo=datetime.timezone.utc), datetime.datetime(2026, 2, 16, 9, 51, 13, 645445, tzinfo=datetime.timezone.utc), 'https://my.yingjiesheng.com/xjh-006-229-123.html', None, 'f6ee6f49231f8fdc51a8ea27dbfad45ab48ee4de', '宣讲会', 'talk', '', '', None, '', '', None, None, 'upcoming', None, '["\\u5ba3\\u8bb2\\u4f1a", "\\u6821\\u56ed\\u62db\\u8058"]', '{"seed_url": "https://my.yingjiesheng.com/xjh-006-229-123.html", "detail": {"title": "", "company_name": "", "school_name": "", "city": "", "venue": "", "date": null, "external_event_id": "006-229-123", "registration_url": null, "description": null}}', datetime.datetime(2026, 2, 16, 9, 51, 13, 645445, tzinfo=datetime.timezone.utc))]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+{"message": "round_finished", "round": 8, "round_inserted": 0, "round_updated": 100, "idle_rounds": 8, "total_inserted": 0, "total_updated": 871, "results": [{"source_code": "remoteok_real", "run_id": 36, "status": "success", "crawled_count": 100, "inserted_count": 0, "updated_count": 100}, {"source_code": "yingjiesheng_xjh", "status": "failed", "inserted_count": 0, "updated_count": 0, "error": "(sqlalchemy.dialects.postgresql.asyncpg.IntegrityError) <class 'asyncpg.exceptions.UniqueViolationError'>: duplicate key value violates unique constraint \"uq_campus_events_source_dedup_fingerprint\"\nDETAIL:  Key (source_id, dedup_fingerprint)=(12, f6ee6f49231f8fdc51a8ea27dbfad45ab48ee4de) already exists.\n[SQL: INSERT INTO campus_events (source_id, external_event_id, source_url, registration_url, dedup_fingerprint, title, event_type, company_name, school_name, province, city, venue, starts_at, ends_at, event_status, description, tags_json, raw_payload_json, first_crawled_at, last_crawled_at) VALUES ($1::INTEGER, $2::VARCHAR, $3::VARCHAR, $4::VARCHAR, $5::VARCHAR, $6::VARCHAR, $7::VARCHAR, $8::VARCHAR, $9::VARCHAR, $10::VARCHAR, $11::VARCHAR, $12::VARCHAR, $13::TIMESTAMP WITH TIME ZONE, $14::TIMESTAMP WITH TIME ZONE, $15::VARCHAR, $16::VARCHAR, $17::JSONB, $18::JSONB, $19::TIMESTAMP WITH TIME ZONE, $20::TIMESTAMP WITH TIME ZONE) ON CONFLICT (source_id, external_event_id) DO UPDATE SET source_url = $21::VARCHAR, registration_url = $22::VARCHAR, dedup_fingerprint = $23::VARCHAR, title = $24::VARCHAR, event_type = $25::VARCHAR, company_name = $26::VARCHAR, school_name = $27::VARCHAR, province = $28::VARCHAR, city = $29::VARCHAR, venue = $30::VARCHAR, starts_at = $31::TIMESTAMP WITH TIME ZONE, ends_at = $32::TIMESTAMP WITH TIME ZONE, event_status = $33::VARCHAR, description = $34::VARCHAR, tags_json = $35::JSONB, raw_payload_json = $36::JSONB, last_crawled_at = $37::TIMESTAMP WITH TIME ZONE RETURNING campus_events.id]\n[parameters: (12, '006-229-123', 'https://my.yingjiesheng.com/xjh-006-229-123.html', None, 'f6ee6f49231f8fdc51a8ea27dbfad45ab48ee4de', '宣讲会', 'talk', '', '', None, '', '', None, None, 'upcoming', None, '[\"\\\\u5ba3\\\\u8bb2\\\\u4f1a\", \"\\\\u6821\\\\u56ed\\\\u62db\\\\u8058\"]', '{\"seed_url\": \"https://my.yingjiesheng.com/xjh-006-229-123.html\", \"detail\": {\"title\": \"\", \"company_name\": \"\", \"school_name\": \"\", \"city\": \"\", \"venue\": \"\", \"date\": null, \"external_event_id\": \"006-229-123\", \"registration_url\": null, \"description\": null}}', datetime.datetime(2026, 2, 16, 9, 51, 13, 645445, tzinfo=datetime.timezone.utc), datetime.datetime(2026, 2, 16, 9, 51, 13, 645445, tzinfo=datetime.timezone.utc), 'https://my.yingjiesheng.com/xjh-006-229-123.html', None, 'f6ee6f49231f8fdc51a8ea27dbfad45ab48ee4de', '宣讲会', 'talk', '', '', None, '', '', None, None, 'upcoming', None, '[\"\\\\u5ba3\\\\u8bb2\\\\u4f1a\", \"\\\\u6821\\\\u56ed\\\\u62db\\\\u8058\"]', '{\"seed_url\": \"https://my.yingjiesheng.com/xjh-006-229-123.html\", \"detail\": {\"title\": \"\", \"company_name\": \"\", \"school_name\": \"\", \"city\": \"\", \"venue\": \"\", \"date\": null, \"external_event_id\": \"006-229-123\", \"registration_url\": null, \"description\": null}}', datetime.datetime(2026, 2, 16, 9, 51, 13, 645445, tzinfo=datetime.timezone.utc))]\n(Background on this error at: https://sqlalche.me/e/20/gkpj)"}]}
+campus crawl failed
+Traceback (most recent call last):
+  File "/home/ubunt/get-resume-direction/.venv/lib/python3.12/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 550, in _prepare_and_execute
+    self._rows = deque(await prepared_stmt.fetch(*parameters))
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubunt/get-resume-direction/.venv/lib/python3.12/site-packages/asyncpg/prepared_stmt.py", line 177, in fetch
+    data = await self.__bind_execute(args, 0, timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubunt/get-resume-direction/.venv/lib/python3.12/site-packages/asyncpg/prepared_stmt.py", line 268, in __bind_execute
+    data, status, _ = await self.__do_execute(
+                      ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubunt/get-resume-direction/.venv/lib/python3.12/site-packages/asyncpg/prepared_stmt.py", line 257, in __do_execute
+    return await executor(protocol)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "asyncpg/protocol/protocol.pyx", line 205, in bind_execute
+asyncpg.exceptions.UniqueViolationError: duplicate key value violates unique constraint "uq_campus_events_source_dedup_fingerprint"
+DETAIL:  Key (source_id, dedup_fingerprint)=(12, f6ee6f49231f8fdc51a8ea27dbfad45ab48ee4de) already exists.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ubunt/get-resume-direction/.venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "/home/ubunt/get-resume-direction/.venv/lib/python3.12/site-packages/sqlalchemy/engine/default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+  File "/home/ubunt/get-resume-direction/.venv/lib/python3.12/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 585, in execute
+    self._adapt_connection.await_(
+  File "/home/ubunt/get-resume-direction/.venv/lib/python3.12/site-packages/sqlalchemy/util/_concurrency_py3k.py", line 132, in await_only
+    return current.parent.switch(awaitable)  # type: ignore[no-any-return,attr-defined] # noqa: E501
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubunt/get-resume-direction/.venv/lib/python3.12/site-packages/sqlalchemy/util/_concurrency_py3k.py", line 196, in greenlet_spawn
+    value = await result
+            ^^^^^^^^^^^^
+  File "/home/ubunt/get-resume-direction/.venv/lib/python3.12/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 563, in _prepare_and_execute
+    self._handle_exception(error)
+  File "/home/ubunt/get-resume-direction/.venv/lib/python3.12/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 513, in _handle_exception
+    self._adapt_connection._handle_exception(error)
+  File "/home/ubunt/get-resume-direction/.venv/lib/python3.12/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 797, in _handle_exception
+    raise translated_error from error
+sqlalchemy.dialects.postgresql.asyncpg.AsyncAdapt_asyncpg_dbapi.IntegrityError: <class 'asyncpg.exceptions.UniqueViolationError'>: duplicate key value violates unique constraint "uq_campus_events_source_dedup_fingerprint"
+DETAIL:  Key (source_id, dedup_fingerprint)=(12, f6ee6f49231f8fdc51a8ea27dbfad45ab48ee4de) already exists.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ubunt/get-resume-direction/app/service/campus_crawl_service.py", line 39, in run_source
+    inserted_count, updated_count = await self.event_dao.upsert_events(session, source.id, events)
+                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubunt/get-resume-direction/app/dao/campus_event_dao.py", line 72, in upsert_events
+    await session.execute(stmt)
+  File "/home/ubunt/get-resume-direction/.venv/lib/python3.12/site-packages/sqlalchemy/ext/asyncio/session.py", line 449, in execute
+    result = await greenlet_spawn(
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubunt/get-resume-direction/.venv/lib/python3.12/site-packages/sqlalchemy/util/_concurrency_py3k.py", line 201, in greenlet_spawn
+    result = context.throw(*sys.exc_info())
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubunt/get-resume-direction/.venv/lib/python3.12/site-packages/sqlalchemy/orm/session.py", line 2351, in execute
+    return self._execute_internal(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubunt/get-resume-direction/.venv/lib/python3.12/site-packages/sqlalchemy/orm/session.py", line 2249, in _execute_internal
+    result: Result[Any] = compile_state_cls.orm_execute_statement(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubunt/get-resume-direction/.venv/lib/python3.12/site-packages/sqlalchemy/orm/bulk_persistence.py", line 1306, in orm_execute_statement
+    result = conn.execute(
+             ^^^^^^^^^^^^^
+  File "/home/ubunt/get-resume-direction/.venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1419, in execute
+    return meth(
+           ^^^^^
+  File "/home/ubunt/get-resume-direction/.venv/lib/python3.12/site-packages/sqlalchemy/sql/elements.py", line 527, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubunt/get-resume-direction/.venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1641, in _execute_clauseelement
+    ret = self._execute_context(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubunt/get-resume-direction/.venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1846, in _execute_context
+    return self._exec_single_context(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubunt/get-resume-direction/.venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1986, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "/home/ubunt/get-resume-direction/.venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 2363, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "/home/ubunt/get-resume-direction/.venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "/home/ubunt/get-resume-direction/.venv/lib/python3.12/site-packages/sqlalchemy/engine/default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+  File "/home/ubunt/get-resume-direction/.venv/lib/python3.12/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 585, in execute
+    self._adapt_connection.await_(
+  File "/home/ubunt/get-resume-direction/.venv/lib/python3.12/site-packages/sqlalchemy/util/_concurrency_py3k.py", line 132, in await_only
+    return current.parent.switch(awaitable)  # type: ignore[no-any-return,attr-defined] # noqa: E501
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubunt/get-resume-direction/.venv/lib/python3.12/site-packages/sqlalchemy/util/_concurrency_py3k.py", line 196, in greenlet_spawn
+    value = await result
+            ^^^^^^^^^^^^
+  File "/home/ubunt/get-resume-direction/.venv/lib/python3.12/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 563, in _prepare_and_execute
+    self._handle_exception(error)
+  File "/home/ubunt/get-resume-direction/.venv/lib/python3.12/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 513, in _handle_exception
+    self._adapt_connection._handle_exception(error)
+  File "/home/ubunt/get-resume-direction/.venv/lib/python3.12/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 797, in _handle_exception
+    raise translated_error from error
+sqlalchemy.exc.IntegrityError: (sqlalchemy.dialects.postgresql.asyncpg.IntegrityError) <class 'asyncpg.exceptions.UniqueViolationError'>: duplicate key value violates unique constraint "uq_campus_events_source_dedup_fingerprint"
+DETAIL:  Key (source_id, dedup_fingerprint)=(12, f6ee6f49231f8fdc51a8ea27dbfad45ab48ee4de) already exists.
+[SQL: INSERT INTO campus_events (source_id, external_event_id, source_url, registration_url, dedup_fingerprint, title, event_type, company_name, school_name, province, city, venue, starts_at, ends_at, event_status, description, tags_json, raw_payload_json, first_crawled_at, last_crawled_at) VALUES ($1::INTEGER, $2::VARCHAR, $3::VARCHAR, $4::VARCHAR, $5::VARCHAR, $6::VARCHAR, $7::VARCHAR, $8::VARCHAR, $9::VARCHAR, $10::VARCHAR, $11::VARCHAR, $12::VARCHAR, $13::TIMESTAMP WITH TIME ZONE, $14::TIMESTAMP WITH TIME ZONE, $15::VARCHAR, $16::VARCHAR, $17::JSONB, $18::JSONB, $19::TIMESTAMP WITH TIME ZONE, $20::TIMESTAMP WITH TIME ZONE) ON CONFLICT (source_id, external_event_id) DO UPDATE SET source_url = $21::VARCHAR, registration_url = $22::VARCHAR, dedup_fingerprint = $23::VARCHAR, title = $24::VARCHAR, event_type = $25::VARCHAR, company_name = $26::VARCHAR, school_name = $27::VARCHAR, province = $28::VARCHAR, city = $29::VARCHAR, venue = $30::VARCHAR, starts_at = $31::TIMESTAMP WITH TIME ZONE, ends_at = $32::TIMESTAMP WITH TIME ZONE, event_status = $33::VARCHAR, description = $34::VARCHAR, tags_json = $35::JSONB, raw_payload_json = $36::JSONB, last_crawled_at = $37::TIMESTAMP WITH TIME ZONE RETURNING campus_events.id]
+[parameters: (12, '006-229-123', 'https://my.yingjiesheng.com/xjh-006-229-123.html', None, 'f6ee6f49231f8fdc51a8ea27dbfad45ab48ee4de', '宣讲会', 'talk', '', '', None, '', '', None, None, 'upcoming', None, '["\\u5ba3\\u8bb2\\u4f1a", "\\u6821\\u56ed\\u62db\\u8058"]', '{"seed_url": "https://my.yingjiesheng.com/xjh-006-229-123.html", "detail": {"title": "", "company_name": "", "school_name": "", "city": "", "venue": "", "date": null, "external_event_id": "006-229-123", "registration_url": null, "description": null}}', datetime.datetime(2026, 2, 16, 9, 51, 49, 999223, tzinfo=datetime.timezone.utc), datetime.datetime(2026, 2, 16, 9, 51, 49, 999223, tzinfo=datetime.timezone.utc), 'https://my.yingjiesheng.com/xjh-006-229-123.html', None, 'f6ee6f49231f8fdc51a8ea27dbfad45ab48ee4de', '宣讲会', 'talk', '', '', None, '', '', None, None, 'upcoming', None, '["\\u5ba3\\u8bb2\\u4f1a", "\\u6821\\u56ed\\u62db\\u8058"]', '{"seed_url": "https://my.yingjiesheng.com/xjh-006-229-123.html", "detail": {"title": "", "company_name": "", "school_name": "", "city": "", "venue": "", "date": null, "external_event_id": "006-229-123", "registration_url": null, "description": null}}', datetime.datetime(2026, 2, 16, 9, 51, 49, 999223, tzinfo=datetime.timezone.utc))]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+{"message": "round_finished", "round": 9, "round_inserted": 0, "round_updated": 100, "idle_rounds": 9, "total_inserted": 0, "total_updated": 971, "results": [{"source_code": "remoteok_real", "run_id": 40, "status": "success", "crawled_count": 100, "inserted_count": 0, "updated_count": 100}, {"source_code": "yingjiesheng_xjh", "status": "failed", "inserted_count": 0, "updated_count": 0, "error": "(sqlalchemy.dialects.postgresql.asyncpg.IntegrityError) <class 'asyncpg.exceptions.UniqueViolationError'>: duplicate key value violates unique constraint \"uq_campus_events_source_dedup_fingerprint\"\nDETAIL:  Key (source_id, dedup_fingerprint)=(12, f6ee6f49231f8fdc51a8ea27dbfad45ab48ee4de) already exists.\n[SQL: INSERT INTO campus_events (source_id, external_event_id, source_url, registration_url, dedup_fingerprint, title, event_type, company_name, school_name, province, city, venue, starts_at, ends_at, event_status, description, tags_json, raw_payload_json, first_crawled_at, last_crawled_at) VALUES ($1::INTEGER, $2::VARCHAR, $3::VARCHAR, $4::VARCHAR, $5::VARCHAR, $6::VARCHAR, $7::VARCHAR, $8::VARCHAR, $9::VARCHAR, $10::VARCHAR, $11::VARCHAR, $12::VARCHAR, $13::TIMESTAMP WITH TIME ZONE, $14::TIMESTAMP WITH TIME ZONE, $15::VARCHAR, $16::VARCHAR, $17::JSONB, $18::JSONB, $19::TIMESTAMP WITH TIME ZONE, $20::TIMESTAMP WITH TIME ZONE) ON CONFLICT (source_id, external_event_id) DO UPDATE SET source_url = $21::VARCHAR, registration_url = $22::VARCHAR, dedup_fingerprint = $23::VARCHAR, title = $24::VARCHAR, event_type = $25::VARCHAR, company_name = $26::VARCHAR, school_name = $27::VARCHAR, province = $28::VARCHAR, city = $29::VARCHAR, venue = $30::VARCHAR, starts_at = $31::TIMESTAMP WITH TIME ZONE, ends_at = $32::TIMESTAMP WITH TIME ZONE, event_status = $33::VARCHAR, description = $34::VARCHAR, tags_json = $35::JSONB, raw_payload_json = $36::JSONB, last_crawled_at = $37::TIMESTAMP WITH TIME ZONE RETURNING campus_events.id]\n[parameters: (12, '006-229-123', 'https://my.yingjiesheng.com/xjh-006-229-123.html', None, 'f6ee6f49231f8fdc51a8ea27dbfad45ab48ee4de', '宣讲会', 'talk', '', '', None, '', '', None, None, 'upcoming', None, '[\"\\\\u5ba3\\\\u8bb2\\\\u4f1a\", \"\\\\u6821\\\\u56ed\\\\u62db\\\\u8058\"]', '{\"seed_url\": \"https://my.yingjiesheng.com/xjh-006-229-123.html\", \"detail\": {\"title\": \"\", \"company_name\": \"\", \"school_name\": \"\", \"city\": \"\", \"venue\": \"\", \"date\": null, \"external_event_id\": \"006-229-123\", \"registration_url\": null, \"description\": null}}', datetime.datetime(2026, 2, 16, 9, 51, 49, 999223, tzinfo=datetime.timezone.utc), datetime.datetime(2026, 2, 16, 9, 51, 49, 999223, tzinfo=datetime.timezone.utc), 'https://my.yingjiesheng.com/xjh-006-229-123.html', None, 'f6ee6f49231f8fdc51a8ea27dbfad45ab48ee4de', '宣讲会', 'talk', '', '', None, '', '', None, None, 'upcoming', None, '[\"\\\\u5ba3\\\\u8bb2\\\\u4f1a\", \"\\\\u6821\\\\u56ed\\\\u62db\\\\u8058\"]', '{\"seed_url\": \"https://my.yingjiesheng.com/xjh-006-229-123.html\", \"detail\": {\"title\": \"\", \"company_name\": \"\", \"school_name\": \"\", \"city\": \"\", \"venue\": \"\", \"date\": null, \"external_event_id\": \"006-229-123\", \"registration_url\": null, \"description\": null}}', datetime.datetime(2026, 2, 16, 9, 51, 49, 999223, tzinfo=datetime.timezone.utc))]\n(Background on this error at: https://sqlalche.me/e/20/gkpj)"}]}

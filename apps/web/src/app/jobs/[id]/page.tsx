@@ -31,14 +31,14 @@ async function fetchJobDetailServer(jobId: number): Promise<JobDetail | null> {
 export async function generateMetadata({ params }: JobDetailPageProps): Promise<Metadata> {
   const jobId = Number(params.id);
   if (Number.isNaN(jobId)) {
-    return { title: "Job detail" };
+    return { title: "职位详情" };
   }
 
   const detail = await fetchJobDetailServer(jobId);
   if (!detail) {
     return {
-      title: "Job detail",
-      description: "Job listing detail"
+      title: "职位详情",
+      description: "职位详情页"
     };
   }
 
@@ -46,7 +46,7 @@ export async function generateMetadata({ params }: JobDetailPageProps): Promise<
 
   return {
     title,
-    description: `Job detail for ${detail.title} at ${detail.company_name}. Source: ${detail.source_code}.`,
+    description: `${detail.company_name} 的 ${detail.title} 职位详情，来源：${detail.source_code}。`,
     alternates: {
       canonical: `/jobs/${jobId}`
     }
